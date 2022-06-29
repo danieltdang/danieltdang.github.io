@@ -57,7 +57,7 @@ iframe {
 /* Visual sections of page are defined below in order of presentation */  
 #splash {
 	height: 1000px;
-	background: url(images/vr_controller.jpg) no-repeat center top fixed;
+	background: url(../images/vr_headset.jpg) no-repeat center top fixed;
 	background-size: cover;
 }
 /* Do not dictate height for remaining sections since the content will dictate heights. */
@@ -66,7 +66,7 @@ iframe {
 }
 #video {
 	padding: 40px 0 120px 0;	
-	background: url(images/vr_controller.jpg) no-repeat center top fixed;
+	background: url(../images/vr_controller.jpg) no-repeat center top fixed;
 	background-size: cover;
 }
 #references {
