@@ -56,9 +56,8 @@ iframe {
 /* -------------------------- PAGE SECTIONS ---------------------------- */
 /* Visual sections of page are defined below in order of presentation */  
 #splash {
-	background-color: #4578DF;
 	height: 1000px;
-	background: url(images/vr_headset.jpg) no-repeat center top fixed;
+	background: url(images/vr_controller.jpg) no-repeat center top fixed;
 	background-size: cover;
 }
 /* Do not dictate height for remaining sections since the content will dictate heights. */
@@ -69,11 +68,6 @@ iframe {
 	padding: 40px 0 120px 0;	
 	background: url(images/vr_controller.jpg) no-repeat center top fixed;
 	background-size: cover;
-}
-#video h1 {
-	text-align: center;
-	text-shadow: 2px 2px #000;
-	color: #FAFAFA;
 }
 #references {
 	padding: 40px 0 60px 0;	
@@ -137,15 +131,14 @@ nav a.button:after {
 	padding-top: 250px; /* provides a lot of space above title to view the background image */
 	color: #fff;
 	text-align: center;
+	font-family: 'Montserrat', sans-serif;
 }
 #title h1 {
-	font-family: 'Orbitron', sans-serif;
 	font-size: 80px; 	
 	text-shadow: 3px 3px #000; /* Shadow helps text to stand out from background */
 }
 #title h3 {
 	font-size: 1em;
-	font-style: italic;
 	margin: 0 40px;
 	padding-bottom: 20px;
 	text-shadow: 2px 2px #000;
