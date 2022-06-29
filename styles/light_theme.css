@@ -61,15 +61,18 @@ iframe {
 	background-size: cover;
 }
 /* Do not dictate height for remaining sections since the content will dictate heights. */
-#overview {
+#about {
 	padding: 40px 0 60px 0; /* top padding provides space for nav bar, bottom padding for asthetics */
 }
-#video {
+#projects {
 	padding: 40px 0 120px 0;	
 	background: url(../images/vr_controller.jpg) no-repeat center top fixed;
 	background-size: cover;
 }
-#references {
+#experience {
+	padding: 40px 0 60px 0;	
+}
+#education {
 	padding: 40px 0 60px 0;	
 }
 footer {
@@ -109,6 +112,8 @@ nav a.button {
 	float: right;
 }
 nav a.button.left {
+	font-size: 18px;
+	font-family: 'Montserrat', sans-serif;
 	float: left;
 }
 nav a.button:hover {
@@ -122,6 +127,16 @@ nav a.button:after {
     display: block;
     content: '';
     border-bottom: solid 1px #4578DF;  
+    transform: scaleX(0);  
+    transition: 250ms ease-in-out;
+}
+nav a.button.left:hover:after {
+    transform: scaleX(1);
+}
+nav a.button.left:after {
+    display: block;
+    content: '';
+    border-bottom: solid 2px #4578DF;  
     transform: scaleX(0);  
     transition: 250ms ease-in-out;
 }

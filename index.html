@@ -7,11 +7,24 @@
 	<meta name="description" content="FSU Daniel Dang's Portfolio">
   	<meta name="keywords" content="Daniel Dang, FSU, Portfolio, Computer Science, C++, HTML5, CSS3, JS">
   	<meta name="author" content="Daniel Dang">
+
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Open+Sans&display=swap" rel="stylesheet">
 	<link href="styles/light_theme.css" rel="stylesheet" type="text/css">
 	<link href="favicon.ico" rel="shortcut icon">
+
+	<script src="scripts/jquery.js"></script>
+	<script type='text/javascript'>
+		jQuery(document).ready(function () {
+		  jQuery('.button').click(function() {
+			targetName = jQuery(this).attr('href');
+			targetLocation = jQuery(targetName).offset().top;
+			jQuery('html, body').animate({scrollTop:targetLocation}, 'slow');
+			return false;
+		  });
+		});
+	</script>
 </head>
 
 <body>
@@ -34,8 +47,8 @@
 	</div> <!-- end title -->
 </section> <!-- end splash -->
 
-<!-------------------- OVERVIEW SECTION -------------------->
-<section id="overview">
+<!-------------------- ABOUT SECTION -------------------->
+<section id="about">
 	<div class="container">
 		<h3>Introduction</h3>
 			<p>
@@ -68,18 +81,18 @@
 				In conclusion, while virtual reality does bring great benefits to society as it is right now, especially with the various beneficial psychological effects that it has on individuals, it still has too many physiological and privacy drawbacks that can hinder individuals from considering it, such as the lack of care for cybersickness and users’ anonymity and private data that need to be improved on in the future of virtual reality before it can truly be described as a leap in technology.
 			</p>
 	</div> <!-- end container -->
-</section> <!-- end overview -->
+</section> <!-- end about -->
 
-<!-------------------- VIDEO SECTION -------------------->
-<section id="video">
+<!-------------------- PROJECTS SECTION -------------------->
+<section id="projects">
 	<div class="container">
 		<h1>Is Virtual Reality Bad For Your Brain?</h1>
 		<iframe width="960" height="540" src="http://www.youtube.com/embed/Dq3B7FGTheM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 	</div> <!-- end container -->
-</section> <!-- end video -->
+</section> <!-- end projects -->
 
-<!-------------------- REFERENCES SECTION -------------------->
-<section id="references">
+<!-------------------- EXPERIENCE SECTION -------------------->
+<section id="experience">
 	<div class="container">
 		<div class="half_container"> <!-- format in two columns / begin first column -->
 			<h3>Major Tethered VR Headset Release Years</h3>
@@ -210,7 +223,15 @@
 			</p>
 		</div> <!-- end half_container / 2nd column -->
 	</div> <!-- end container -->
-</section> <!-- end references -->
+</section> <!-- end experiences -->
+
+<!-------------------- EDUCATION SECTION -------------------->
+<section id="education">
+	<div class="container">
+		<h1>Is Virtual Reality Bad For Your Brain?</h1>
+		<iframe width="960" height="540" src="http://www.youtube.com/embed/Dq3B7FGTheM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+	</div> <!-- end container -->
+</section> <!-- end education -->
 
 <!-------------------- FOOTER SECTION -------------------->
 <footer>
