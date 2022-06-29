@@ -14,17 +14,8 @@
 	<link href="styles/light_theme.css" rel="stylesheet" type="text/css">
 	<link href="favicon.ico" rel="shortcut icon">
 
-	<script src="scripts/jquery.js"></script>
-	<script type='text/javascript'>
-		jQuery(document).ready(function () {
-		  jQuery('.button').click(function() {
-			targetName = jQuery(this).attr('href');
-			targetLocation = jQuery(targetName).offset().top;
-			jQuery('html, body').animate({scrollTop:targetLocation}, 'slow');
-			return false;
-		  });
-		});
-	</script>
+	<script src="plugins/jquery.js"></script>
+	<script src="scripts/scripts.js"></script>
 </head>
 
 <body>
