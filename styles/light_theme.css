@@ -1,6 +1,4 @@
 @charset "UTF-8";
-@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap');
-/* CSS Document created by Daniel Dang */
 
 /* --------------------------- HTML TAG STYLES ----------------------------- */
 body {
@@ -153,7 +151,7 @@ nav a.button.left:after {
 	font-size: 80px; 	
 	text-shadow: 3px 3px #000; /* Shadow helps text to stand out from background */
 }
-#title h3 {
+#app {
 	font-size: 1em;
 	margin: 0 40px;
 	padding-bottom: 20px;
