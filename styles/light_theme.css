@@ -72,9 +72,10 @@ iframe {
 #references {
 	padding: 40px 0 60px 0;	
 }
-#footer {
+footer {
 	padding: 20px 0;
 	border-top: solid 1px #d2d2d7;
+	text-align: center;	
 }
 
 /* ---------------- CONTAINER STYLES ----------------- */
@@ -145,9 +146,6 @@ nav a.button:after {
 }
   
 /* ------------------- FOOTER CREDITS --------------------- */
-footer {
-	text-align: center;	
-}
 footer table {      
 	margin: 0 auto;		/* centers the color palette table */
 }
