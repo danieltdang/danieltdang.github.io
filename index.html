@@ -9,27 +9,27 @@
   	<meta name="author" content="Daniel Dang">
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Open+Sans&display=swap" rel="stylesheet">
 	<link href="styles/light_theme.css" rel="stylesheet" type="text/css">
 	<link href="favicon.ico" rel="shortcut icon">
 </head>
 
 <body>
 <!------------- SPLASH SECTION -------------------->
-<section id="splash">  <!-- splash section provides background for navbar and title-page -->
-	<div id="navbar">
-		<div class="container">  <!-- container keeps everything aligned and centered no matter what the window size -->
-			<ul id="menu">
-				<!-- button class provides button-like appearance and scrolling javascript (see bottom of html code) -->
-				<li><a href="#overview" class="button">About</a></li>
-				<li><a href="#video" class="button">Education</a></li>
-				<li><a href="#references" class="button">Projects</a></li>
-			</ul>
-		</div> <!-- end container -->
-	</div> <!-- end navbar -->
+<section id="splash">  <!-- splash section provides background for navbar and title -->
+	<nav>
+		<ul id="name">
+			<li><a href="#title" class="button">DANIEL DANG</a></li>
+		<ul id="menu">
+			<li><a href="#about" class="button">ABOUT</a></li>
+			<li><a href="#education" class="button">EDUCATION</a></li>
+			<li><a href="#experience" class="button">EXPERIENCE</a></li>
+			<li><a href="#projects" class="button">PROJECTS</a></li>
+		</ul>
+	</nav> <!-- end navbar -->
 
 	<!-- Title Page -->
-	<div id="title-page"> <!-- Used to style the title and subtitle -->
+	<div id="title"> <!-- Used to style the title and subtitle -->
 		<div class="container"> 
 			<h1>DANIEL DANG</h1>
 			<h3>by Daniel Dang</h3>
@@ -216,14 +216,12 @@
 </section> <!-- end references -->
 
 <!------------- FOOTER SECTION -------------------->
-<section id="footer">
+<footer>
 	<div class="container">
-		<div id="credits">  <!-- credits id allows for styling of footer content --> 
-            <p><img src="images/author.jpg" width="100" alt="Portrait of Daniel Dang"></p>
-            <p><a href="mailto:dtd21b@fsu.edu">Daniel Dang</a> is a computer science student at FSU.</p>
-            <p>Copyright &copy; 2022 Daniel Dang. All rights reserved</p>
-		</div> <!-- end credits -->
+		<p><img src="images/author.jpg" width="100" alt="Portrait of Daniel Dang"></p>
+		<p><a href="mailto:dtd21b@fsu.edu">Daniel Dang</a> is a computer science student at FSU.</p>
+		<p>Copyright &copy; 2022 Daniel Dang. All rights reserved</p>
 	</div> <!-- end container -->
-</section> <!-- end footer -->
+</footer> <!-- end footer -->
 </body>
 </html>
