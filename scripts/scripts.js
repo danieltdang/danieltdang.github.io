@@ -1,27 +1,39 @@
 // Scrolling effect for navbar: https://jquery.com/download/
 jQuery(document).ready(function () {
-    jQuery('.button').click(function() {
-      targetName = jQuery(this).attr('href');
-      targetLocation = jQuery(targetName).offset().top;
-      jQuery('html, body').animate({scrollTop:targetLocation}, 'slow');
-      return false;
-    });
+  jQuery('.button').click(function() {
+    targetName = jQuery(this).attr('href');
+    targetLocation = jQuery(targetName).offset().top;
+    jQuery('html, body').animate({scrollTop:targetLocation}, 'slow');
+    return false;
   });
+});
 
 // Typewriter for sub-title: https://github.com/tameemsafi/typewriterjs
 var app = document.getElementById('app');
 
 var typewriter = new Typewriter(app, {
   loop: true,
-  delay: 75,
+  delay: 50,
+  deleteSpeed: 5
 });
 
-typewriter
-  .pauseFor(2500)
-  .typeString('A simple yet powerful native javascript')
-  .pauseFor(300)
-  .deleteChars(10)
-  .typeString('<strong>JS</strong> plugin for a cool typewriter effect and ')
-  .typeString('<strong>only <span style="color: #27ae60;">5kb</span> Gzipped!</strong>')
-  .pauseFor(1000)
-  .start();
+var myTitleMessages = [
+  "hey there!",
+  "glad to see you here.",
+  "my name is daniel.",
+  "i am a sophomore at FSU.",
+  "i am studying computer science.",
+  "i am interested in software engineering.",
+  "i am a big fan of pho.",
+  "i am looking to expand my horizons in SWE.",
+  "thank you for visiting!"
+]
+
+for (var i = 0; i < myTitleMessages.length; i++) {
+  typewriter
+    .typeString(myTitleMessages[i])
+    .pauseFor(500)
+    .deleteAll()
+    .pauseFor(500)
+}
+typewriter.start();
