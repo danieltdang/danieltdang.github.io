@@ -148,20 +148,16 @@ nav a.button.left:after {
 	font-family: 'Montserrat', sans-serif;
 }
 #title h1 {
+	margin-bottom: 30px;
 	font-size: 80px; 	
 	text-shadow: 3px 3px #000; /* Shadow helps text to stand out from background */
 }
 #app {
 	font-size: 1em;
-	margin: 0 40px;
-	padding-bottom: 20px;
 	text-shadow: 2px 2px #000;
 }
   
-/* ------------------- FOOTER CREDITS --------------------- */
-footer table {      
-	margin: 0 auto;		/* centers the color palette table */
-}
+/* ------------------- FOOTER STYLES --------------------- */
 footer p {
 	font-size: .8em;
 	margin: 10px 0;
