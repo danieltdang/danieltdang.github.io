@@ -1,6 +1,6 @@
 @charset "UTF-8";
 
-/* --------------------------- HTML TAG STYLES ----------------------------- */
+/* --------------------------- HTML TAG STYLES --------------------------- */
 body {
 	margin: 0;
 	padding: 0;
@@ -51,35 +51,7 @@ iframe {
 	margin: 0 auto
 }
 
-/* -------------------------- PAGE SECTIONS ---------------------------- */
-/* Visual sections of page are defined below in order of presentation */  
-#splash {
-	height: 1000px;
-	background: url(../images/vr_headset.jpg) no-repeat center top fixed;
-	background-size: cover;
-}
-/* Do not dictate height for remaining sections since the content will dictate heights. */
-#about {
-	padding: 40px 0 60px 0; /* top padding provides space for nav bar, bottom padding for asthetics */
-}
-#projects {
-	padding: 40px 0 120px 0;	
-	background: url(../images/vr_controller.jpg) no-repeat center top fixed;
-	background-size: cover;
-}
-#experience {
-	padding: 40px 0 60px 0;	
-}
-#education {
-	padding: 40px 0 60px 0;	
-}
-footer {
-	padding: 20px 0;
-	border-top: solid 1px #d2d2d7;
-	text-align: center;	
-}
-
-/* ---------------- CONTAINER STYLES ----------------- */
+/* --------------------------- CONTAINER STYLES --------------------------- */
 /* Containers are used to keep the page content within bounds centered in the browser window. */
 .container {
 	width: 960px; /* static width container always stays at this width no matter what the window size */
@@ -92,7 +64,7 @@ footer {
 	overflow: hidden;
 }
 
-/* ----------------- NAVIGATION BAR STYLES ------------------- */ 
+/* --------------------------- NAVIGATION BAR STYLES --------------------------- */ 
 nav {
 	position: fixed; /* navbar should always be shown even when page is scrolled */
 	top: 0;
@@ -139,25 +111,55 @@ nav a.button.left:after {
     transition: 250ms ease-in-out;
 }
 
-/* ---------------- TITLE PAGE STYLES ------------------- */
+/* --------------------------- TITLE SECTION STYLES --------------------------- */
 #title {
 	width: 100%;
 	padding-top: 250px; /* provides a lot of space above title to view the background image */
 	color: #fff;
 	text-align: center;
 	font-family: 'Montserrat', sans-serif;
+	height: 1000px;
+	background: url(../images/vr_headset.jpg) no-repeat center top fixed;
+	background-size: cover;
 }
 #title h1 {
 	margin-bottom: 30px;
 	font-size: 80px; 	
 	text-shadow: 3px 3px #000; /* Shadow helps text to stand out from background */
 }
-#app {
+#sub-title {
 	font-size: 1em;
 	text-shadow: 2px 2px #000;
 }
-  
-/* ------------------- FOOTER STYLES --------------------- */
+
+/* --------------------------- ABOUT SECTION STYLES --------------------------- */
+#about {
+	padding: 40px 0 60px 0; /* top padding provides space for nav bar, bottom padding for asthetics */
+}
+
+/* --------------------------- PROJECTS SECTION STYLES --------------------------- */
+#projects {
+	padding: 40px 0 120px 0;	
+	background: url(../images/vr_controller.jpg) no-repeat center top fixed;
+	background-size: cover;
+}
+
+/* --------------------------- EXPERIENCE SECTION STYLES --------------------------- */
+#experience {
+	padding: 40px 0 60px 0;	
+}
+
+/* --------------------------- EDUCATION SECTION STYLES --------------------------- */
+#education {
+	padding: 40px 0 60px 0;	
+}
+
+/* --------------------------- FOOTER STYLES --------------------------- */
+footer {
+	padding: 20px 0;
+	border-top: solid 1px #d2d2d7;
+	text-align: center;	
+}
 footer p {
 	font-size: .8em;
 	margin: 10px 0;
