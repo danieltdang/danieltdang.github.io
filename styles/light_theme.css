@@ -137,11 +137,9 @@ nav a.button.left:after {
 	padding: 40px 0 60px 0; /* top padding provides space for nav bar, bottom padding for asthetics */
 }
 
-/* --------------------------- PROJECTS SECTION STYLES --------------------------- */
-#projects {
-	padding: 40px 0 120px 0;	
-	background: url(../images/vr_controller.jpg) no-repeat center top fixed;
-	background-size: cover;
+/* --------------------------- EDUCATION SECTION STYLES --------------------------- */
+#education {
+	padding: 40px 0 60px 0;	
 }
 
 /* --------------------------- EXPERIENCE SECTION STYLES --------------------------- */
@@ -149,9 +147,11 @@ nav a.button.left:after {
 	padding: 40px 0 60px 0;	
 }
 
-/* --------------------------- EDUCATION SECTION STYLES --------------------------- */
-#education {
-	padding: 40px 0 60px 0;	
+/* --------------------------- PROJECTS SECTION STYLES --------------------------- */
+#projects {
+	padding: 40px 0 120px 0;	
+	background: url(../images/vr_controller.jpg) no-repeat center top fixed;
+	background-size: cover;
 }
 
 /* --------------------------- FOOTER STYLES --------------------------- */
