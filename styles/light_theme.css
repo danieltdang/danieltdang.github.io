@@ -14,11 +14,10 @@ p {
 	line-height: 1.5em;
 }
 h1 {
+	text-align: center;
+	letter-spacing: 5px;
 	padding: 20px 0;
-}
-h4 {
-	padding: 20px 0;
-	font-weight: bold;
+	font-family: 'Open Sans', sans-serif;
 }
 table {
 	border: solid 1px #0597F2;
@@ -48,14 +47,15 @@ a:hover {
 iframe {
 	border: solid 1px #4578DF;
 	display: block;
-	margin: 0 auto
+	margin: 0 auto;
 }
 
 /* --------------------------- CONTAINER STYLES --------------------------- */
 /* Containers are used to keep the page content within bounds centered in the browser window. */
 .container {
-	width: 960px; /* static width container always stays at this width no matter what the window size */
+	width: 960px;
   	margin: 0 auto;
+	padding: 60px 0;
   	overflow: hidden;
 }
 .half_container { /* provides a two column presentation */
@@ -114,7 +114,6 @@ nav a.button.left:after {
 /* --------------------------- TITLE SECTION STYLES --------------------------- */
 #title {
 	width: 100%;
-	padding-top: 250px; /* provides a lot of space above title to view the background image */
 	color: #fff;
 	text-align: center;
 	font-family: 'Montserrat', sans-serif;
@@ -123,7 +122,9 @@ nav a.button.left:after {
 	background-size: cover;
 }
 #title h1 {
-	margin-bottom: 30px;
+	margin: 400px 0 30px 0;
+	padding: 0;
+	letter-spacing: 1px;
 	font-size: 80px; 	
 	text-shadow: 3px 3px #000; /* Shadow helps text to stand out from background */
 }
@@ -140,6 +141,18 @@ nav a.button.left:after {
 /* --------------------------- EDUCATION SECTION STYLES --------------------------- */
 #education {
 	padding: 40px 0 60px 0;	
+}
+#university img {
+	float: left;
+	margin: 0 50px 0 200px;
+	width: 100px;
+}
+#university p {
+	width: fit-content;
+}
+#university h4 {
+	font-weight: normal;
+	font-style: italic;
 }
 
 /* --------------------------- EXPERIENCE SECTION STYLES --------------------------- */
