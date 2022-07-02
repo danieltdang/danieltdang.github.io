@@ -154,7 +154,7 @@ nav a.button.left:after {
 	width: 150px;
 }
 #university h2, h3, h4, h5 {
-	margin: 0 0 0 0;
+	margin: 0 0 20px 30px;
 	line-height: 0.5em;
 }
 #university h4, h5 {
