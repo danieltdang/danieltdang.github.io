@@ -9,7 +9,7 @@ jQuery(document).ready(function () {
 });
 
 // Typewriter for sub-title: https://github.com/tameemsafi/typewriterjs
-var app = document.getElementById('sub-title');
+var app = document.getElementById('message');
 
 var typewriter = new Typewriter(app, {
   loop: true,
