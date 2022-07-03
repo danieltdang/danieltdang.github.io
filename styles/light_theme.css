@@ -18,7 +18,7 @@ p {
 h1 {
 	text-align: center;
 	letter-spacing: 5px;
-	padding: 20px 0;
+	padding: 0;
 	font-family: 'Open Sans', sans-serif;
 }
 table {
@@ -63,9 +63,11 @@ iframe {
 .row {
 	flex-direction: row;
 }
-
 .column {
 	flex-direction: column;
+}
+.bulletless {
+	list-style-type: none;
 }
 
 /* --------------------------- NAVIGATION BAR STYLES --------------------------- */ 
@@ -150,36 +152,58 @@ nav a.button.left:after {
 #university img {
 	float: left;
 	margin: 0;
-	height: 150px;
-	width: 150px;
+	height: 163px;
+	width: 163px;
 }
 #university h2, h3, h4, h5 {
-	margin: 0 0 20px 30px;
-	line-height: 0.5em;
+	margin: 10px 0 10px 30px;
 }
 #university h5 {
 	font-weight: normal;
 	font-style: italic;
 }
 
-/* --------------------------- EXPERIENCE SECTION STYLES --------------------------- */
-#experience {
+/* --------------------------- SKILLS SECTION STYLES --------------------------- */
+#skills {
 	padding: 40px 0 60px 0;	
+}
+#skills div {
+	width: 800px;
+	text-decoration: none;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: bold;
+}
+#skills li {
+	transition: 0.3s;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	margin: 16px;
+}
+#skills li:hover {
+	transform: scale(1.2);
+}
+#skills img {
+	margin: 10px;
+	width: 90px;
 }
 
 /* --------------------------- PROJECTS SECTION STYLES --------------------------- */
 #projects {
 	padding: 40px 0 120px 0;	
-	background: url(../images/vr_controller.jpg) no-repeat center top fixed;
-	background-size: cover;
 }
 
 /* --------------------------- FOOTER STYLES --------------------------- */
 footer {
-	border-top: dotted 1px #d2d2d7;
+	padding: 40px 0 40px 0;
+	background-color: #EFEFEF;
 	text-align: center;	
 }
 footer p {
 	font-size: 12px;
 	margin: 10px 0;
+}
+#socials svg {
+	margin: 0 10px 0 10px;
 }
