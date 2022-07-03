@@ -69,6 +69,10 @@ iframe {
 .bulletless {
 	list-style-type: none;
 }
+.center {
+	align-items: center;
+	text-align: center;
+}
 
 /* --------------------------- NAVIGATION BAR STYLES --------------------------- */ 
 nav {
@@ -121,7 +125,6 @@ nav a.button.left:after {
 #title {
 	width: 100%;
 	color: #fff;
-	text-align: center;
 	font-family: 'Montserrat', sans-serif;
 	height: 1000px;
 	background: url(../images/vr_headset.jpg) no-repeat center top fixed;
@@ -171,14 +174,9 @@ nav a.button.left:after {
 	width: 800px;
 	text-decoration: none;
 	font-family: 'Open Sans', sans-serif;
-	font-weight: bold;
 }
 #skills li {
 	transition: 0.3s;
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
 	margin: 16px;
 }
 #skills li:hover {
