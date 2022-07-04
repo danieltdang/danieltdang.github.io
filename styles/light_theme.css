@@ -155,7 +155,6 @@ nav a.button.left:after {
 #university img {
 	float: left;
 	margin: 0;
-	height: 163px;
 	width: 163px;
 }
 #university h2, h3, h4, h5 {
@@ -172,7 +171,6 @@ nav a.button.left:after {
 }
 #skills div {
 	width: 800px;
-	text-decoration: none;
 	font-family: 'Open Sans', sans-serif;
 }
 #skills li {
@@ -184,12 +182,37 @@ nav a.button.left:after {
 }
 #skills img {
 	margin: 10px;
-	width: 90px;
+	width: 95px;
 }
 
 /* --------------------------- PROJECTS SECTION STYLES --------------------------- */
 #projects {
 	padding: 40px 0 120px 0;	
+}
+#projects div .container {
+	width: 1250px;
+}
+#projects li {
+	margin: 50px;
+}
+#projects img {
+	display: inline;
+	transition: 0.3s;
+	border-radius: 10px;
+	width: 300px;
+}
+#projects img:hover {
+	filter: blur(4px) brightness(50%);
+}
+.description {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	margin-left: 25px;
+	margin-right: 25px;
+	padding-left: 25px;
+	padding-right: 25px;
 }
 
 /* --------------------------- FOOTER STYLES --------------------------- */
