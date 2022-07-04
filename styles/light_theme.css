@@ -73,6 +73,12 @@ iframe {
 	align-items: center;
 	text-align: center;
 }
+.relative {
+	position: relative;
+}
+.absolute {
+	position: absolute;
+}
 
 /* --------------------------- NAVIGATION BAR STYLES --------------------------- */ 
 nav {
@@ -202,13 +208,15 @@ nav a.button.left:after {
 	width: 300px;
 }
 #projects img:hover {
-	filter: blur(4px) brightness(50%);
+	filter: blur(3px) brightness(50%);
 }
 .description {
 	display: flex;
 	align-items: center;
 	justify-content: center;
 	text-align: center;
+	top: 0;
+	left: 0;
 	margin-left: 25px;
 	margin-right: 25px;
 	padding-left: 25px;
