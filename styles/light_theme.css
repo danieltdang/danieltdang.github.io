@@ -85,6 +85,7 @@ nav {
 	position: fixed; /* navbar should always be shown even when page is scrolled */
 	top: 0;
 	width: 100%;
+	z-index: 1;
 	background-color: rgba(255, 255, 255, 0.9); 
 	box-shadow: 0 1px 4px #aaa;
 	font-family: 'Open Sans', sans-serif;
@@ -201,26 +202,25 @@ nav a.button.left:after {
 #projects li {
 	margin: 50px;
 }
+#projects li:hover img {
+	filter: blur(1px) brightness(50%);
+}
+#projects li:hover .description {
+	visibility: visible;
+	opacity: 1;
+}
 #projects img {
-	display: inline;
 	transition: 0.3s;
 	border-radius: 10px;
 	width: 300px;
 }
-#projects img:hover {
-	filter: blur(3px) brightness(50%);
-}
 .description {
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	text-align: center;
-	top: 0;
-	left: 0;
-	margin-left: 25px;
-	margin-right: 25px;
-	padding-left: 25px;
-	padding-right: 25px;
+	transition: opacity 0.3s, visibility 0.3s;
+	top: 50%;
+  	left: 50%;
+  	transform: translate(-50%, -50%);
+	visibility: hidden;
+	opacity: 0;
 }
 
 /* --------------------------- FOOTER STYLES --------------------------- */

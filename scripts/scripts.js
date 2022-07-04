@@ -8,9 +8,6 @@ jQuery(document).ready(function () {
   });
 });
 
-// Adds container class to all li in Skills section
-jQuery('#skills .bulletless > li').addClass('container column center');
-
 // Typewriter for sub-title: https://github.com/tameemsafi/typewriterjs
 var app = document.getElementById('message');
 
