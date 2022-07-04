@@ -133,7 +133,7 @@ nav a.button.left:after {
 	width: 100%;
 	color: #fff;
 	font-family: 'Montserrat', sans-serif;
-	height: 1000px;
+	height: 100vh;
 	background: url(../images/vr_headset.jpg) no-repeat center top fixed;
 	background-size: cover;
 }
