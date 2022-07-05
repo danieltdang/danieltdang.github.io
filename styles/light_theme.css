@@ -12,7 +12,7 @@ body {
 	font-weight: 400;
 }
 section {
-	padding: 40px 0 40px 0;
+	padding: 50px 0 50px 0;
 }
 p {
 	font-size: 14px;
@@ -115,7 +115,7 @@ nav a.button.active {
 	padding: 0;
 	letter-spacing: 1px;
 	font-size: 80px; 	
-	text-shadow: 3px 3px #000; /* Shadow helps text to stand out from background */
+	text-shadow: 3px 3px #000;
 }
 #message {
 	padding-top: 20px;
@@ -124,8 +124,14 @@ nav a.button.active {
 }
 
 /* --------------------------- ABOUT SECTION STYLES --------------------------- */
+#about {
+	background-color: #fff;
+}
 
 /* --------------------------- EDUCATION SECTION STYLES --------------------------- */
+#education {
+	color: #212529;
+}
 #university img {
 	float: left;
 	margin: auto 0;
@@ -143,6 +149,9 @@ nav a.button.active {
 }
 
 /* --------------------------- SKILLS SECTION STYLES --------------------------- */
+#skills {
+	background-color: #fff;
+}
 #skills div {
 	width: 65%;
 	max-width: 1000px;

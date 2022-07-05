@@ -17,7 +17,7 @@ window.onscroll = () => {
 
   sections.forEach((section) => {
     const sectionTop = section.offsetTop;
-    if (window.scrollY >= sectionTop - 100) { // integer is extra spacing between sections
+    if (window.scrollY >= sectionTop - ($("nav").height() + parseInt($("section").css("padding-top")))) {
       current = section.getAttribute("id");
     }
   });
