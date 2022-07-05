@@ -8,7 +8,30 @@ jQuery(document).ready(function () {
   });
 });
 
-// Typewriter for sub-title: https://github.com/tameemsafi/typewriterjs
+// Change style for active section for navbar: https://jquery.com/download/
+const sections = document.querySelectorAll("section");
+const navButton = document.querySelectorAll("nav a");
+
+window.onscroll = () => {
+  var current = "";
+
+  sections.forEach((section) => {
+    const sectionTop = section.offsetTop;
+    if (window.scrollY >= sectionTop - 100) { // integer is extra spacing between sections
+      current = section.getAttribute("id");
+    }
+  });
+
+  navButton.forEach((a) => {
+    a.classList.remove("active");
+    if ($(a).attr("href") == "#" + current) {
+      a.classList.add("active");
+    }
+  });
+};
+
+
+// Typewriter for message under title: https://github.com/tameemsafi/typewriterjs
 var app = document.getElementById('message');
 
 var typewriter = new Typewriter(app, {

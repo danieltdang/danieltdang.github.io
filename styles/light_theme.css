@@ -8,7 +8,11 @@ body {
 	height: 100%;
 	background-color: #FAFAFA;
 	color: #1d1d1f;
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: 'Manrope', sans-serif;;
+	font-weight: 400;
+}
+section {
+	padding: 40px 0 40px 0;
 }
 p {
 	font-size: 14px;
@@ -18,23 +22,9 @@ p {
 h1 {
 	text-align: center;
 	letter-spacing: 5px;
+	margin: 20px 0 20px 0;
 	padding: 0;
-	font-family: 'Open Sans', sans-serif;
-}
-table {
-	border: solid 1px #0597F2;
-	border-collapse:collapse;
-}
-td {
-	padding: 6px;
-	border: solid 1px #0597F2;
-}
-th {
-	font-weight: bold;
-	background-color: #0597F2;
-	text-align: center;
-	padding: 6px;
-	border: solid 1px #0597F2;
+	font-weight: 800;
 }
 a:link {
 	color: #0597F2;
@@ -86,53 +76,35 @@ nav {
 	top: 0;
 	width: 100%;
 	z-index: 1;
-	background-color: rgba(255, 255, 255, 0.9); 
-	box-shadow: 0 1px 4px #aaa;
-	font-family: 'Open Sans', sans-serif;
+	background-color: rgba(255, 255, 255, 1); 
+	box-shadow: 0 0.275rem 0.75rem -0.0625rem rgb(11 15 25 / 6%), 0 0.125rem 0.4rem -0.0625rem rgb(11 15 25 / 3%);
 }
 nav a.button {
-	font-size: 16px;
-	color: #000;
-	padding: 15px;
+	font-weight: 500;
+	font-size: 18px;
+	color: #4d4e58;
+	padding: 21px;
 	text-decoration: none;
 	text-align: center;
 	float: right;
 }
+nav a.button:hover {
+	color: #0B0F19;
+}
 nav a.button.left {
-	font-size: 18px;
-	font-family: 'Montserrat', sans-serif;
+	font-weight: 600;
+	font-size: 22px;
+	padding: 18px;
 	float: left;
 }
-nav a.button:hover {
+nav a.button.active {
 	color: #4578DF;
-	transition: 0.5s;
-}
-nav a.button:hover:after {
-    transform: scaleX(1);
-}
-nav a.button:after {
-    display: block;
-    content: '';
-    border-bottom: solid 1px #4578DF;  
-    transform: scaleX(0);  
-    transition: 250ms ease-in-out;
-}
-nav a.button.left:hover:after {
-    transform: scaleX(1);
-}
-nav a.button.left:after {
-    display: block;
-    content: '';
-    border-bottom: solid 2px #4578DF;  
-    transform: scaleX(0);  
-    transition: 250ms ease-in-out;
 }
 
 /* --------------------------- TITLE SECTION STYLES --------------------------- */
 #title {
 	width: 100%;
 	color: #fff;
-	font-family: 'Montserrat', sans-serif;
 	height: 100vh;
 	background: url(../images/vr_headset.jpg) no-repeat center top fixed;
 	background-size: cover;
@@ -151,22 +123,18 @@ nav a.button.left:after {
 }
 
 /* --------------------------- ABOUT SECTION STYLES --------------------------- */
-#about {
-	padding: 40px 0 60px 0; /* top padding provides space for nav bar, bottom padding for asthetics */
-}
 
 /* --------------------------- EDUCATION SECTION STYLES --------------------------- */
-#education {
-	padding: 40px 0 60px 0;	
-}
 #university img {
 	float: left;
-	margin: 0;
-	width: 163px;
-	height: 163px;
+	margin: auto 0;
+	width: 120px;
 }
-#university h2, h3, h4, h5 {
-	margin: 10px 0 10px 30px;
+#university h2, h3, h4 {
+	margin: 0 0 0 30px;
+}
+#university h5 {
+	margin: 15px 0 15px 30px;
 }
 #university h5 {
 	font-weight: normal;
@@ -174,17 +142,14 @@ nav a.button.left:after {
 }
 
 /* --------------------------- SKILLS SECTION STYLES --------------------------- */
-#skills {
-	padding: 40px 0 60px 0;	
-}
 #skills div {
 	width: 65%;
 	max-width: 1000px;
-	font-family: 'Open Sans', sans-serif;
 }
 #skills li {
 	transition: 0.3s;
 	margin: 16px;
+	font-weight: 600;
 }
 #skills li:hover {
 	transform: scale(1.2);
@@ -195,9 +160,6 @@ nav a.button.left:after {
 }
 
 /* --------------------------- PROJECTS SECTION STYLES --------------------------- */
-#projects {
-	padding: 40px 0 120px 0;	
-}
 #projects div .container {
 	width: 85%;
 }
