@@ -8,7 +8,7 @@ jQuery(document).ready(function () {
   });
 });
 
-// Change style for active section for navbar: https://jquery.com/download/
+// Change style for active section for navbar
 const sections = document.querySelectorAll("section");
 const navButton = document.querySelectorAll("nav a");
 
@@ -30,6 +30,17 @@ window.onscroll = () => {
   });
 };
 
+// Toggle between adding and removing the "responsive" class to nav when the user clicks on the icon
+function myNavMenu() {
+  const navMenu = document.querySelector("nav ul");
+
+  if ($(navMenu).attr("class") != "responsive") {
+    $(navMenu).addClass("responsive");
+  } 
+  else {
+    $(navMenu).removeClass("responsive");
+  }
+}
 
 // Typewriter for message under title: https://github.com/tameemsafi/typewriterjs
 var app = document.getElementById('message');
