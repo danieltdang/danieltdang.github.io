@@ -17,7 +17,7 @@ window.onscroll = function() {
 
   sections.forEach((section) => {
     const sectionTop = section.offsetTop;
-    if (window.scrollY >= sectionTop - ($("nav").height() + parseInt($("section").css("padding-top")))) {
+    if (window.scrollY >= sectionTop - ($("nav #menu").height() + parseInt($("section").css("padding-top")))) {
       current = section.getAttribute("id");
     }
   });
@@ -41,10 +41,6 @@ function myNavMenu() {
   else {
     $(navMenu).removeClass("responsive");
   }
-
-  // Triggers a "scroll" to update navbar coloring on open
-  window.scrollTo(window.scrollX, window.scrollY - 1);
-  window.scrollTo(window.scrollX, window.scrollY + 1);
 }
 
 // Typewriter for message under title: https://github.com/tameemsafi/typewriterjs
