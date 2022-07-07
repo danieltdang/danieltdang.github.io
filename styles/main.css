@@ -155,13 +155,17 @@ nav #name .icon {
 		display: flex;
 		flex-direction: column;
 		width: 100%;
+		transition: 1s left;
 	}
 	nav #menu ul.responsive li a.button {
 		display: block;
 		float: left;
+		text-align: left;
 		padding: 18px;
 		width: 100%;
-		text-align: left;
+	}
+	nav #menu ul a.button::after {
+		border-style: none;
 	}
 }
 
@@ -226,7 +230,7 @@ nav #name .icon {
 	#education div  {
 		width: 95%;
 	}
-	#education #university img, div, h2, h3, h4, h5 {
+	#education #university img, div, h2, h3, h4 {
 		justify-content: center;
 		align-items: center;
 		text-align: center;
