@@ -108,7 +108,7 @@ nav #menu ul {
 	flex-direction: row;
 }
 nav #menu ul a.button {
-	color: #4d4e58;
+	color: #0B0F19;
 	font-weight: 500;
 	font-size: 18px;
 	padding: 21px;
@@ -117,8 +117,22 @@ nav #menu ul a.button {
 nav #menu ul a.button:hover {
 	color: #0B0F19;
 }
+nav #menu ul a.button::after {
+	display: block;
+    content: '';
+    border-bottom: solid 2px #e5e5e8;
+	border-radius: 2px;
+	opacity: 0;
+}
+nav #menu ul a.button:hover:after {
+	opacity: 1;
+    transition: 0.5s opacity;
+}
 nav #menu ul a.button.active {
 	color: #4578DF;
+}
+nav #menu ul a.button.active:hover:after {
+	border-color: #4578DF;
 }
 nav #name .icon {
 	padding: 24px;
@@ -145,7 +159,6 @@ nav #name .icon {
 	nav #menu ul.responsive li a.button {
 		display: block;
 		float: left;
-		color: #0B0F19;
 		padding: 18px;
 		width: 100%;
 		text-align: left;
