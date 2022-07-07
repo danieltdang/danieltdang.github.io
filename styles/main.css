@@ -21,7 +21,7 @@ p {
 }
 h1 {
 	text-align: center;
-	letter-spacing: 5px;
+	letter-spacing: 4px;
 	margin: 20px 0 20px 0;
 	padding: 0;
 	font-weight: 800;
@@ -47,7 +47,7 @@ iframe {
 	display: flex; 
 	flex-wrap: wrap;
 	align-content: center;
-	text-align: center;
+	text-align: left;
 }
 .row {
 	flex-direction: row;
@@ -196,20 +196,49 @@ nav #name .icon {
 #education {
 	color: #212529;
 }
-#university img {
+#education #university img {
 	float: left;
 	margin: auto 0;
-	width: 120px;
+	padding: 0 30px 0 0;
+	width: 100px;
 }
-#university h2, h3, h4 {
-	margin: 0 0 0 30px;
+#education #university h2, h3, h4 {
+	margin: 0;
+	padding: 0;
 }
-#university h5 {
-	margin: 15px 0 15px 30px;
+#education #university h5 {
+	margin: 0;
+	padding: 15px 0 0 0;
 }
-#university h5 {
+#education #university h5 {
 	font-weight: normal;
 	font-style: italic;
+}
+#education #coursework h2, h3 {
+	text-align: left;
+	padding: 0 0 0 0;
+}
+#education #coursework ul {
+	padding-left: 50px;
+}
+
+@media screen and (max-width: 600px) {
+	#education div  {
+		width: 95%;
+	}
+	#education #university img, div, h2, h3, h4, h5 {
+		justify-content: center;
+		align-items: center;
+		text-align: center;
+		padding: 0 0 0 0 !important;
+	}
+	#education #coursework ul {
+		justify-content: left;
+		align-items: left;
+		padding: 0 0 0 30px;
+		font-size: 14px;
+		width: 95%;
+	}
 }
 
 /* --------------------------- SKILLS SECTION STYLES --------------------------- */
@@ -246,6 +275,7 @@ nav #name .icon {
 /* --------------------------- PROJECTS SECTION STYLES --------------------------- */
 #projects div .container {
 	width: 100%;
+	max-width: 1250px;
 }
 #projects li {
 	margin: 50px;
@@ -262,7 +292,7 @@ nav #name .icon {
 	border-radius: 10px;
 	width: 300px;
 }
-.description {
+#projects .description {
 	transition: opacity 0.3s, visibility 0.3s;
 	top: 50%;
   	left: 50%;
