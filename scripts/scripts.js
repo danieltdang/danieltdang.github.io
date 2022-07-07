@@ -1,18 +1,18 @@
 // Scrolling effect for navbar: https://jquery.com/download/
-jQuery(document).ready(function () {
-  jQuery('.button').click(function() {
-    targetName = jQuery(this).attr('href');
-    targetLocation = jQuery(targetName).offset().top;
-    jQuery('html, body').animate({scrollTop:targetLocation}, 'slow');
+$(document).ready(function () {
+  $('.button').click(function() {
+    targetName = $(this).attr('href');
+    targetLocation = $(targetName).offset().top;
+    $('html, body').animate({scrollTop:targetLocation}, 'slow');
     return false;
   });
 });
 
 // Change style for active section for navbar
-const sections = document.querySelectorAll("section");
-const navButton = document.querySelectorAll("nav a");
 
 window.onscroll = function() {
+  const sections = $("section").toArray();
+  const navButton = $("nav a").toArray();
   var current = "";
 
   sections.forEach((section) => {
@@ -31,9 +31,8 @@ window.onscroll = function() {
 };
 
 // Toggle between adding and removing the "responsive" class to nav when the user clicks on the icon
-const navMenu = document.querySelector("nav #dropdown");
-
 function myNavMenu() {
+  const navMenu = $("nav #dropdown");
 
   if (!$(navMenu).attr("class").includes("responsive")) {
     $(navMenu).addClass("responsive");
@@ -44,9 +43,9 @@ function myNavMenu() {
 }
 
 // Typewriter for message under title: https://github.com/tameemsafi/typewriterjs
-var app = document.getElementById('message');
+var message = document.getElementById('message');
 
-var typewriter = new Typewriter(app, {
+var typewriter = new Typewriter(message, {
   loop: true,
   delay: 50,
   deleteSpeed: 5
