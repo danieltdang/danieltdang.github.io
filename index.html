@@ -41,25 +41,29 @@
 </head>
 
 <body>
-<!-------------------- NAVBAR SECTION -------------------->
-<nav>
-	<a href="#title" class="button left">Daniel Dang</a>
-	<ul class="responsive" id="menu">
-		<li><a href="javascript:void(0);" class="icon" onclick="myNavMenu()"><span class="iconify-inline" data-icon="fa6-solid:bars" style="font-size: 18px; color: #0B0F19;"></span></a></li>
-		<li><a href="#about" class="button right">ABOUT</a></li>
-		<li><a href="#education" class="button right">EDUCATION</a></li>
-		<li><a href="#skills" class="button right">SKILLS</a></li>
-		<li><a href="#projects" class="button right">PROJECTS</a></li>
-	</ul>
+<!-- NAVBAR SECTION -->
+<nav class="container split fixed">
+	<div class="container split" id="name">
+		<a href="#title" class="button">Daniel Dang</a>
+		<a href="javascript:void(0);" class="icon" onclick="myNavMenu()"><span class="iconify-inline" data-icon="fa6-solid:bars" style="font-size: 18px; color: #0B0F19;"></span></a>
+	</div>
+	<div class="container" id="menu">
+		<ul>
+			<li><a href="#about" class="button right relative">ABOUT</a></li>
+			<li><a href="#education" class="button right relative">EDUCATION</a></li>
+			<li><a href="#skills" class="button right relative">SKILLS</a></li>
+			<li><a href="#projects" class="button right relative">PROJECTS</a></li>
+		</ul>
+	</div>
 </nav> <!-- end navbar -->
 
-<!-------------------- TITLE SECTION -------------------->
+<!-- TITLE SECTION -->
 <section class="container column center" id="title">
 	<h1>DANIEL DANG</h1>
 	<div id="message"></div>
 </section> <!-- end title -->
 
-<!-------------------- ABOUT SECTION -------------------->
+<!-- ABOUT SECTION -->
 <section class="container column" id="about">
 	<h1>ABOUT</h1>
 	<div class="container column">
@@ -67,7 +71,7 @@
 	</div> <!-- end container -->
 </section> <!-- end about -->
 
-<!-------------------- EDUCATION SECTION -------------------->
+<!-- EDUCATION SECTION -->
 <section class="container column" id="education">
 	<h1>EDUCATION</h1>
 	<div class="container row" id="university">
@@ -104,11 +108,11 @@
 	</div> <!-- end coursework -->
 </section> <!-- end education -->
 
-<!-------------------- SKILLS SECTION -------------------->
+<!-- SKILLS SECTION -->
 <section class="container column" id="skills">
 	<h1>SKILLS</h1>
 	<div class="container">
-		<ui class="container bulletless">
+		<ui class="container bulletless center">
 			<li class="container column center"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg"/>C++</li>
 			<li class="container column center"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg"/>HTML5</li>
 			<li class="container column center"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg"/>CSS3</li>
@@ -125,11 +129,11 @@
 	</div> <!-- end container -->
 </section> <!-- end skills -->
 
-<!-------------------- PROJECTS SECTION -------------------->
+<!-- PROJECTS SECTION -->
 <section class="container column" id="projects">
 	<h1>PROJECTS</h1>
 	<div class="container column">
-		<ui class="container bulletless">
+		<ui class="container bulletless center">
 			<li class="relative">
 				<img src="https://mathworld.wolfram.com/images/eps-svg/SquareGrid_800.svg"/>
 				<div class="description absolute">
@@ -164,7 +168,7 @@
 	</div>
 </section> <!-- end projects -->
 
-<!-------------------- FOOTER SECTION -------------------->
+<!-- FOOTER SECTION -->
 <footer class="container column">
 	<div class="container row" id="socials">
 		<span class="iconify" data-icon="akar-icons:github-fill"></span>

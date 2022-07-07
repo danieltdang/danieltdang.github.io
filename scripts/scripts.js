@@ -12,7 +12,7 @@ jQuery(document).ready(function () {
 const sections = document.querySelectorAll("section");
 const navButton = document.querySelectorAll("nav a");
 
-window.onscroll = () => {
+window.onscroll = function() {
   var current = "";
 
   sections.forEach((section) => {
@@ -31,8 +31,9 @@ window.onscroll = () => {
 };
 
 // Toggle between adding and removing the "responsive" class to nav when the user clicks on the icon
+const navMenu = document.querySelector("nav ul");
+
 function myNavMenu() {
-  const navMenu = document.querySelector("nav ul");
 
   if ($(navMenu).attr("class") != "responsive") {
     $(navMenu).addClass("responsive");
@@ -40,6 +41,10 @@ function myNavMenu() {
   else {
     $(navMenu).removeClass("responsive");
   }
+
+  // Triggers a "scroll" to update navbar coloring on open
+  window.scrollTo(window.scrollX, window.scrollY - 1);
+  window.scrollTo(window.scrollX, window.scrollY + 1);
 }
 
 // Typewriter for message under title: https://github.com/tameemsafi/typewriterjs
