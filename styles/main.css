@@ -217,7 +217,7 @@ nav #name .icon {
 	background-color: #fff;
 }
 #skills div {
-	width: 85%;
+	width: 100%;
 	max-width: 1000px;
 }
 #skills li {
@@ -233,9 +233,19 @@ nav #name .icon {
 	width: 100px;
 }
 
+@media screen and (max-width: 600px) {
+	#skills li {
+		width: 30%;
+		margin: 20px;
+	}
+	#skills img {
+		margin: 16px;
+	}
+}
+
 /* --------------------------- PROJECTS SECTION STYLES --------------------------- */
 #projects div .container {
-	width: 85%;
+	width: 100%;
 }
 #projects li {
 	margin: 50px;
@@ -259,6 +269,15 @@ nav #name .icon {
   	transform: translate(-50%, -50%);
 	visibility: hidden;
 	opacity: 0;
+}
+
+@media screen and (max-width: 600px) {
+	#projects li {
+		margin: 0 0 40px 0;
+	}
+	#projects img {
+		width: 300px;
+	}
 }
 
 /* --------------------------- FOOTER STYLES --------------------------- */
