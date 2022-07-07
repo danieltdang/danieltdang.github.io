@@ -31,11 +31,11 @@ window.onscroll = function() {
 };
 
 // Toggle between adding and removing the "responsive" class to nav when the user clicks on the icon
-const navMenu = document.querySelector("nav ul");
+const navMenu = document.querySelector("nav #dropdown");
 
 function myNavMenu() {
 
-  if ($(navMenu).attr("class") != "responsive") {
+  if (!$(navMenu).attr("class").includes("responsive")) {
     $(navMenu).addClass("responsive");
   } 
   else {

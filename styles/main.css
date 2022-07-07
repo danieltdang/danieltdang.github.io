@@ -95,46 +95,49 @@ nav a.button {
 	text-decoration: none;
 	text-align: center;
 }
-nav #name a.button {
+nav #menu a.button {
 	color: #4578DF;
 	font-weight: 600;
 	font-size: 22px;
 	padding: 18px;
 	float: left;
-	display: block;
 }
-nav #menu ul {
+nav #dropdown {
+	align-content: flex-end;
+	justify-content: flex-end;
+}
+nav #dropdown li {
 	display: flex;
 	flex-direction: row;
 }
-nav #menu ul a.button {
+nav #dropdown li a.button {
 	color: #0B0F19;
 	font-weight: 500;
 	font-size: 18px;
-	padding: 21px;
+	padding: 20px;
 	float: right;
 }
-nav #menu ul a.button:hover {
+nav #dropdown a.button:hover {
 	color: #0B0F19;
 }
-nav #menu ul a.button::after {
+nav #dropdown a.button::after {
 	display: block;
     content: '';
     border-bottom: solid 2px #e5e5e8;
 	border-radius: 2px;
 	opacity: 0;
 }
-nav #menu ul a.button:hover:after {
+nav #dropdown a.button:hover:after {
 	opacity: 1;
     transition: 0.5s opacity;
 }
-nav #menu ul a.button.active {
+nav #dropdown a.button.active {
 	color: #4578DF;
 }
-nav #menu ul a.button.active:hover:after {
+nav #dropdown a.button.active:hover:after {
 	border-color: #4578DF;
 }
-nav #name .icon {
+nav #menu .icon {
 	padding: 24px;
 	display: none;
 }
@@ -143,28 +146,35 @@ nav #name .icon {
 	nav {
 		display: block !important;
 	}
-	nav #menu ul li a.button {
+	nav #menu .icon {
+		float: right;
+		display: block;
+ 	}
+	nav #menu a.button {
+		padding: 20px;
+	}
+	nav #dropdown li a.button {
 		display: none;
 	}
-	nav #name .icon {
-	  	float: right;
-	  	display: block;
-	}
-	nav #menu ul.responsive {
+	nav #dropdown.responsive {
 		float: right;
 		display: flex;
 		flex-direction: column;
+		align-content: flex-start;
 		width: 100%;
 		transition: 1s left;
 	}
-	nav #menu ul.responsive li a.button {
+	nav #dropdown.responsive li {
+		width: 100%;
+	}
+	nav #dropdown.responsive li a.button {
 		display: block;
 		float: left;
 		text-align: left;
 		padding: 18px;
 		width: 100%;
 	}
-	nav #menu ul a.button::after {
+	nav #dropdown a.button::after {
 		border-style: none;
 	}
 }
