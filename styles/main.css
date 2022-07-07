@@ -145,6 +145,8 @@ nav #name .icon {
 	nav #menu ul.responsive li a.button {
 		display: block;
 		float: left;
+		color: #0B0F19;
+		padding: 18px;
 		width: 100%;
 		text-align: left;
 	}
