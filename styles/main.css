@@ -209,7 +209,7 @@ nav #menu .icon {
 }
 #splash:after {
 	content: "";
-	position: fixed;
+	position: fixed; /* allows for a fixed splash on iOS devices */
 	top: 0;
 	height: 100vh;
 	left: 0;

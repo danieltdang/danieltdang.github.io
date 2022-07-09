@@ -15,7 +15,7 @@ const navFirst = $("nav #menu li:first-child a");
 const navHamburger = $("nav #menu .icon");
 const navBar = $("nav");
 
-window.onscroll = function() {
+$(window).scroll(function() {
   var current = "";
 
   sections.forEach((section) => {
@@ -26,17 +26,21 @@ window.onscroll = function() {
   });
 
   navButton.forEach((a) => {
-    a.classList.remove("active");
-    if ($(a).attr("href") == "#" + current) {
+    if ($(a).attr("href") == "#" + current && !$(a).attr("class").includes("active")) {
       a.classList.add("active");
-      
+    }
+    else if ($(a).attr("href") != "#" + current && $(a).attr("class").includes("active")) {
+      a.classList.remove("active");
+    }
+
+    if (navFirst.hasClass("active")) {
+      navBar.addClass("transparent"); 
+    }
+    else {
       navBar.removeClass("transparent");
-      if (navFirst.hasClass("active")) {
-        navBar.addClass("transparent"); 
-      }
     }
   });
-};
+});
 
 // Toggle between adding and removing the "responsive" class to nav when the user clicks on the icon
 const navMenu = $("nav #dropdown");
