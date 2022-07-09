@@ -74,6 +74,9 @@ iframe {
 .fixed {
 	position: fixed;
 }
+.transparent {
+	background-color: transparent;
+}
 
 /* --------------------------- NAVIGATION BAR STYLES --------------------------- */ 
 nav {
@@ -82,6 +85,21 @@ nav {
 	z-index: 1;
 	background-color: rgba(255, 255, 255, 1); 
 	box-shadow: 0 0.275rem 0.75rem -0.0625rem rgb(11 15 25 / 6%), 0 0.125rem 0.4rem -0.0625rem rgb(11 15 25 / 3%);
+}
+nav.transparent {
+	box-shadow: none;
+}
+nav.transparent #menu li a.button {
+	color: #fff;
+}
+nav.transparent #menu .icon {
+	color: #fff;
+}
+nav.transparent #dropdown li a.button {
+	color: #fff;
+}
+nav.transparent #dropdown li a.button:hover {
+	color: #fff;
 }
 nav ul {
 	margin: 0;
@@ -94,7 +112,7 @@ nav a.button {
 	text-decoration: none;
 	text-align: center;
 }
-nav #menu a.button {
+nav #menu li a.button {
 	color: #4578DF;
 	font-weight: 600;
 	font-size: 22px;
@@ -146,6 +164,7 @@ nav #menu .icon {
 		display: block !important;
 	}
 	nav #menu .icon {
+		color: #0B0F19;
 		float: right;
 		display: block;
  	}
@@ -181,23 +200,23 @@ nav #menu .icon {
 	}
 }
 
-/* --------------------------- TITLE SECTION STYLES --------------------------- */
-#title {
+/* --------------------------- SPLASH SECTION STYLES --------------------------- */
+#splash {
 	padding: 0;
 	width: 100%;
 	color: #fff;
 	height: 100vh;
-	background: url(../images/vr_headset.jpg) no-repeat center top fixed;
+	background: url(../images/mountain.jpg) no-repeat center top fixed;
 	background-size: cover;
 }
-#title h1 {
+#splash h1 {
 	margin: 0;
 	padding: 0;
 	letter-spacing: 1px;
 	font-size: 80px; 	
 	text-shadow: 3px 3px #000;
 }
-#message {
+#splash #message {
 	padding-top: 20px;
 	font-size: 20px;
 	text-shadow: 2px 2px #000;
@@ -262,7 +281,7 @@ nav #menu .icon {
 }
 #skills div {
 	width: 100%;
-	max-width: 1000px;
+	max-width: 800px;
 }
 #skills li {
 	transition: 0.3s;
@@ -335,6 +354,6 @@ footer p {
 	font-size: 12px;
 	margin: 10px 0;
 }
-#socials svg {
+footer #socials svg {
 	margin: 0 10px 0 10px;
 }

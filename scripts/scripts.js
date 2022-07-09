@@ -1,18 +1,21 @@
 // Scrolling effect for navbar: https://jquery.com/download/
 $(document).ready(function () {
-  $('.button').click(function() {
-    targetName = $(this).attr('href');
+  $(".button").click(function() {
+    targetName = $(this).attr("href");
     targetLocation = $(targetName).offset().top;
-    $('html, body').animate({scrollTop:targetLocation}, 'slow');
+    $("html, body").animate({scrollTop:targetLocation}, "slow");
     return false;
   });
 });
 
-// Change style for active section for navbar
+// Change style for active section for navbar and add transparent class when in splash
+const sections = $("section").toArray();
+const navButton = $("nav a").toArray();
+const navFirst = $("nav #menu li:first-child a");
+const navHamburger = $("nav #menu .icon");
+const navBar = $("nav");
 
 window.onscroll = function() {
-  const sections = $("section").toArray();
-  const navButton = $("nav a").toArray();
   var current = "";
 
   sections.forEach((section) => {
@@ -26,13 +29,19 @@ window.onscroll = function() {
     a.classList.remove("active");
     if ($(a).attr("href") == "#" + current) {
       a.classList.add("active");
+      
+      navBar.removeClass("transparent");
+      if (navFirst.hasClass("active")) {
+        navBar.addClass("transparent"); 
+      }
     }
   });
 };
 
 // Toggle between adding and removing the "responsive" class to nav when the user clicks on the icon
+const navMenu = $("nav #dropdown");
+
 function myNavMenu() {
-  const navMenu = $("nav #dropdown");
 
   if (!$(navMenu).attr("class").includes("responsive")) {
     $(navMenu).addClass("responsive");
