@@ -87,7 +87,7 @@ nav {
 	box-shadow: 0 0.275rem 0.75rem -0.0625rem rgb(11 15 25 / 6%), 0 0.125rem 0.4rem -0.0625rem rgb(11 15 25 / 3%);
 }
 nav.transparent {
-	text-shadow: 1px 1px #0B0F19;
+	text-shadow: 2px 2px #0B0F19;
 	box-shadow: none;
 }
 nav.transparent #menu li a.button {
