@@ -87,7 +87,7 @@ nav {
 	box-shadow: 0 0.275rem 0.75rem -0.0625rem rgb(11 15 25 / 6%), 0 0.125rem 0.4rem -0.0625rem rgb(11 15 25 / 3%);
 }
 nav.transparent {
-	text-shadow: 1px 1px #000;
+	text-shadow: 1px 1px #0B0F19;
 	box-shadow: none;
 }
 nav.transparent #menu li a.button {
@@ -207,7 +207,8 @@ nav #menu .icon {
 	width: 100%;
 	color: #fff;
 	height: 100vh;
-	background: url(../images/mountain.jpg) no-repeat center top;
+	background: url(../images/mountain.jpg) no-repeat center top fixed;
+	background-size: cover;
 }
 #splash h1 {
 	margin: 0;
