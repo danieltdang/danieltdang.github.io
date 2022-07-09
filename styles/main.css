@@ -156,7 +156,7 @@ nav #dropdown a.button.active:hover:after {
 	border-color: #4578DF;
 }
 nav #menu .icon {
-	padding: 24px;
+	padding: 22px;
 	display: none;
 }
 
@@ -170,7 +170,7 @@ nav #menu .icon {
 		display: block;
  	}
 	nav #menu a.button {
-		padding: 20px;
+		padding: 18px;
 	}
 	nav #dropdown {
 		display: block;
@@ -183,7 +183,7 @@ nav #menu .icon {
 		display: block;
 		float: left;
 		text-align: left;
-		padding: 0 0 18px 18px;
+		padding: 9px 0 9px 18px;
 	}
 	nav #dropdown.responsive {
 		display: block;
