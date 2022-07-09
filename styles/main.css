@@ -207,7 +207,7 @@ nav #menu .icon {
 	width: 100%;
 	color: #fff;
 	height: 100vh;
-	background: url(../images/mountain.jpg) no-repeat center top scroll;
+	background: url(../images/mountain.jpg) no-repeat center top fixed;
 	background-size: cover;
 }
 #splash h1 {
@@ -223,6 +223,11 @@ nav #menu .icon {
 	text-shadow: 2px 2px #000;
 }
 
+@media screen and (max-width: 600px) {
+	#splash {
+		background-attachment: scroll;
+	}
+}
 /* --------------------------- ABOUT SECTION STYLES --------------------------- */
 #about {
 	background-color: #fff;
