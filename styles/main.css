@@ -206,8 +206,7 @@ nav #menu .icon {
 	width: 100%;
 	color: #fff;
 	height: 100vh;
-	background: url(../images/mountain.jpg) no-repeat center top fixed;
-	background-size: cover;
+	background: url(../images/mountain.jpg) no-repeat center top;
 }
 #splash h1 {
 	margin: 0;
