@@ -56,7 +56,7 @@ function myNavMenu() {
   }
 
   // Handles special cases where navbar goes to section that is/isn't transparent when it isn't/is transparent
-  for (let i = 0; i <= 1600; i++) {
+  for (let i = 0; i <= 2000; i++) {
     setTimeout(() => {$(window).trigger("scroll")}, 1);
   }
 }
