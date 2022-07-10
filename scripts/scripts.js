@@ -56,8 +56,9 @@ function myNavMenu() {
   }
 
   // Handles special cases where navbar goes to section that is/isn't transparent when it isn't/is transparent
-  for (let i = 0; i <= 1600; i++)
-  setTimeout(() => {window.dispatchEvent(new CustomEvent("scroll"))}, 1);
+  for (let i = 0; i <= 1600; i++) {
+    setTimeout(() => {$(window).trigger("scroll")}, 1);
+  }
 }
 
 // Typewriter for message under title: https://github.com/tameemsafi/typewriterjs
