@@ -281,10 +281,11 @@ nav #menu .icon {
 		text-align: center;
 	}
 	#education #coursework h3 {
+		margin: 0 0 0 20px;
 		text-align: left;
 	}
 	#education #coursework ul {
-		padding: 0 0 0 40px;
+		padding: 0 20px 0 40px;
 		width: 90%;
 	}
 }
