@@ -20,7 +20,8 @@ $(window).scroll(function() {
 
   sections.forEach((section) => {
     const sectionTop = section.offsetTop;
-    if (window.scrollY >= sectionTop - ($("nav #menu").height() + parseInt($("section").css("padding-top")))) {
+
+    if (window.scrollY >= sectionTop - ($("nav").height() + parseInt($("section").css("padding-top")))) {
       current = section.getAttribute("id");
     }
   });
@@ -53,6 +54,10 @@ function myNavMenu() {
   else {
     $(navMenu).removeClass("responsive");
   }
+
+  // Handles special cases where navbar goes to section that is/isn't transparent when it isn't/is transparent
+  for (let i = 0; i <= 1600; i++)
+  setTimeout(() => {window.dispatchEvent(new CustomEvent("scroll"))}, 1);
 }
 
 // Typewriter for message under title: https://github.com/tameemsafi/typewriterjs

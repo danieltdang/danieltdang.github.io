@@ -86,7 +86,6 @@ nav {
 	box-shadow: 0 0.275rem 0.75rem -0.0625rem rgb(11 15 25 / 6%), 0 0.125rem 0.4rem -0.0625rem rgb(11 15 25 / 3%);
 }
 nav.transparent {
-	text-shadow: 2px 2px #0B0F19;
 	box-shadow: none;
 }
 nav.transparent #menu li a.button {
@@ -176,7 +175,7 @@ nav #menu .icon {
 		width: 100%;
 		height: 0;
 		overflow: hidden;
-		transition: all .4s ease-in-out;
+		transition: all 0.4s ease-in-out;
 	}
 	nav #dropdown li a.button {
 		display: block;
