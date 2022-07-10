@@ -272,16 +272,19 @@ nav #menu .icon {
 	#education div  {
 		width: 95%;
 	}
-	#education #university img, div, h2, h3, h4 {
+	#education #university img, div, h2, h3, h4, h5 {
 		justify-content: center;
-		align-items: center;
 		text-align: center;
 		padding: 0 0 0 0 !important;
 	}
+	#education #coursework h2 {
+		text-align: center;
+	}
+	#education #coursework h3 {
+		text-align: left;
+	}
 	#education #coursework ul {
-		justify-content: left;
-		align-items: left;
-		padding: 0 0 0 30px;
+		padding: 0 0 0 40px;
 		width: 90%;
 	}
 }
