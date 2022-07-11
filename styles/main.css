@@ -158,7 +158,7 @@ nav #menu .icon {
 	display: none;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 626px) {
 	nav {
 		display: block !important;
 	}
