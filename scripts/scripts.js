@@ -76,9 +76,9 @@ var myTitleMessages = [
   "my name is daniel.",
   "i am a sophomore at FSU.",
   "i am studying computer science.",
-  "i am interested in software engineering.",
+  "i am interested in SWE.",
   "i am a big fan of pho.",
-  "i am looking to expand my horizons in SWE.",
+  "i want to expand my horizons in SWE.",
   "thank you for visiting!"
 ]
 

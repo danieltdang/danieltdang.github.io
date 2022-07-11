@@ -375,3 +375,9 @@ footer p {
 footer #socials svg {
 	margin: 0 10px 0 10px;
 }
+footer #socials a:link {
+	color: #1d1d1f;
+}
+footer #socials a:visited {
+	color: #1d1d1f;
+}
