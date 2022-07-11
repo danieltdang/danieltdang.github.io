@@ -397,6 +397,11 @@ footer p {
 	font-size: 12px;
 	margin: 10px 0;
 }
+footer #socials a {
+	border: 2px solid rgba(255, 255, 255, 0.08);
+	border-radius: 4px;
+	transition: background-color 0.5s ease;
+}
 footer #socials svg {
 	margin: 0 10px 0 10px;
 }
@@ -405,4 +410,7 @@ footer #socials a:link {
 }
 footer #socials a:visited {
 	color: #1d1d1f;
+}
+footer #socials a:hover {
+	color: #0476D9;
 }
