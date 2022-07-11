@@ -245,12 +245,16 @@ nav #menu .icon {
 	border-radius: 8px;
 	width: 48px;
 	height: 48px;
+	transition: background-color 0.5s ease;
 }
 #splash #socials a:link {
 	color: #fff;
 }
 #splash #socials a:visited {
 	color: #fff;
+}
+#splash #socials a:hover {
+	background-color: #0476D9;
 }
 
 /* --------------------------- ABOUT SECTION STYLES --------------------------- */
