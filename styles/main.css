@@ -219,19 +219,40 @@ nav #menu .icon {
 	-moz-background-size: cover;
 	-o-background-size: cover;
 	background-size: cover;
+	filter: brightness(70%);
 }
 #splash h1 {
 	margin: 0;
 	padding: 0;
 	letter-spacing: 1px;
 	font-size: 80px; 	
-	text-shadow: 3px 3px #000;
+	filter: drop-shadow(0px 2px 2px rgba(0, 0, 0, 1));
 }
-#splash #message {
-	padding-top: 20px;
+#splash #message span {
 	font-size: 20px;
-	text-shadow: 2px 2px #000;
+	filter: drop-shadow(0px 2px 2px rgba(0, 0, 0, 1));
 }
+#splash #socials {
+	padding-top: 20px;
+	width: 250px;
+}
+#splash #socials svg {
+	padding: 12px;
+	font-size: 24px;
+}
+#splash #socials a {
+	border: 2px solid rgba(255, 255, 255, 0.08);
+	border-radius: 8px;
+	width: 48px;
+	height: 48px;
+}
+#splash #socials a:link {
+	color: #fff;
+}
+#splash #socials a:visited {
+	color: #fff;
+}
+
 /* --------------------------- ABOUT SECTION STYLES --------------------------- */
 #about {
 	background-color: #fff;
@@ -275,7 +296,7 @@ nav #menu .icon {
 	#education #university img, div, h2, h3, h4, h5 {
 		justify-content: center;
 		text-align: center;
-		padding: 0 0 0 0 !important;
+		padding: 0 0 0 0;
 	}
 	#education #coursework h2 {
 		text-align: center;
