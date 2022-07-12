@@ -277,7 +277,8 @@ nav #menu .icon {
 }
 #about #documents {
 	width: 425px;
-	padding: 40px 0 20px 0;
+	padding-top: 40px;
+	margin-bottom: 20px;
 	font-size: 24px;
 }
 #about #documents svg {
@@ -324,10 +325,11 @@ nav #menu .icon {
 #education #university h5 {
 	margin: 0;
 	padding: 15px 0 0 0;
-}
-#education #university h5 {
 	font-weight: normal;
 	font-style: italic;
+}
+#education #coursework {
+	margin-bottom: 20px;
 }
 #education #coursework h2, h3 {
 	text-align: left;
@@ -366,6 +368,7 @@ nav #menu .icon {
 #skills div {
 	width: 100%;
 	max-width: 800px;
+	margin-bottom: 20px;
 }
 #skills li {
 	transition: 0.3s;
