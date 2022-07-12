@@ -270,13 +270,18 @@ nav #menu .icon {
 	width: 250px;
 	border: 10px solid #FAFAFA;
 	border-radius: 50%;
+	box-shadow: 0 0.275rem 0.75rem -0.0625rem rgb(11 15 25 / 6%), 0 0.125rem 0.4rem -0.0625rem rgb(11 15 25 / 3%);
 }
 #about #info p {
+	font-size: 18px;
 	padding: 0 40px;
-	width: 300px;
+	max-width: 350px;
+	width: 70%;
+	margin: auto 0;
 }
 #about #documents {
-	width: 425px;
+	max-width: 425px;
+	width: 80%;
 	padding-top: 40px;
 	margin-bottom: 20px;
 	font-size: 24px;
@@ -287,7 +292,7 @@ nav #menu .icon {
 #about #documents a {
 	font-size: 24px;
 	font-weight: 500;
-	padding: 10px 15px;
+	padding: 10px;
 	text-decoration: none;
 	color: #1d1d1f;
 	background-color: #fff;
@@ -306,6 +311,13 @@ nav #menu .icon {
 	color: #fff;
 }
 
+@media screen and (max-width: 600px) {
+	#about #info p  {
+		text-align: center;
+		padding-top: 40px;
+	}
+
+}
 /* --------------------------- EDUCATION SECTION STYLES --------------------------- */
 #education {
 	background-color: #FAFAFA;
@@ -341,7 +353,7 @@ nav #menu .icon {
 
 @media screen and (max-width: 600px) {
 	#education div  {
-		width: 95%;
+		width: 85%;
 	}
 	#education #university img, div, h2, h3, h4, h5 {
 		justify-content: center;
