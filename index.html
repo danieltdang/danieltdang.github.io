@@ -42,18 +42,20 @@
 
 <body>
 <!-- NAVBAR SECTION -->
-<nav class="container split fixed transparent">
-	<ul class="container split bulletless" id="menu">
-		<li class="container"><a href="#splash" class="button active">Daniel Dang</a></li>
-		<li class="container"><a href="javascript:void(0);" class="icon" onclick="myNavMenu()"><span class="iconify-inline" data-icon="fa6-solid:bars" style="font-size: 18px;"></span></a>
-		</li>
-	</ul>
-	<ul class="container bulletless" id="dropdown">
-		<li class="container"><a href="#about" class="button relative">ABOUT</a></li>
-		<li class="container"><a href="#education" class="button relative">EDUCATION</a></li>
-		<li class="container"><a href="#skills" class="button relative">SKILLS</a></li>
-		<li class="container"><a href="#projects" class="button relative">PROJECTS</a></li>
-	</ul>
+<nav class="container center fixed transparent">
+	<div class="container split" id="wrap">
+		<ul class="container split bulletless" id="menu">
+			<li class="container"><a href="#splash" class="button active">Daniel Dang</a></li>
+			<li class="container"><a href="javascript:void(0);" class="icon" onclick="myNavMenu()"><span class="iconify-inline" data-icon="fa6-solid:bars" style="font-size: 18px;"></span></a>
+			</li>
+		</ul>
+		<ul class="container bulletless" id="dropdown">
+			<li class="container"><a href="#about" class="button relative">ABOUT</a></li>
+			<li class="container"><a href="#education" class="button relative">EDUCATION</a></li>
+			<li class="container"><a href="#skills" class="button relative">SKILLS</a></li>
+			<li class="container"><a href="#projects" class="button relative">PROJECTS</a></li>
+		</ul>
+	</div>
 </nav>
 
 <!-- SPLASH SECTION -->
@@ -70,8 +72,14 @@
 <!-- ABOUT SECTION -->
 <section class="container column" id="about">
 	<h1>ABOUT ME</h1>
-	<div class="container column">
-
+	<div class="container row" id="info">
+		<img src="images/author.jpg" alt="Image of Daniel Dang">
+		<p>
+			I am a sophomore of FSU's Class of 2024 and my passion is Computer Science. I am currently a undergraduate student working towards my Bachelor of Science (B.S.) degree in Computer Science. My interests include software development, server management, web development, and scripting/automation.
+		</p>
+	</div>
+	<div id="documents">
+		<a href="documents/Resume.pdf" download><span class="iconify-inline" data-icon="fluent:document-pdf-24-regular"></span></a>
 	</div>
 </section>
 
@@ -79,7 +87,7 @@
 <section class="container column" id="education">
 	<h1>EDUCATION</h1>
 	<div class="container row" id="university">
-		<img src="images/fsu_logo.png">
+		<img class="center" src="images/fsu_logo.png" alt="Image of FSU logo">
 		<div class="container column">
 			<h2>Florida State University, Tallahassee</h2>
 			<h3>B.S. Computer Science</h3>
@@ -117,18 +125,18 @@
 	<h1>SKILLS</h1>
 	<div class="container">
 		<ui class="container bulletless center">
-			<li class="container column center"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg"/>C++</li>
-			<li class="container column center"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg"/>HTML5</li>
-			<li class="container column center"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg"/>CSS3</li>
-			<li class="container column center"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg"/>JavaScript</li>
-			<li class="container column center"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg"/>Bootstrap</li>
-			<li class="container column center"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jquery/jquery-original.svg"/>jQuery</li>
-			<li class="container column center"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg"/>Git</li>
-			<li class="container column center"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cmake/cmake-original.svg"/>CMake</li>
-			<li class="container column center"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/googlecloud/googlecloud-original.svg"/>Google Cloud</li>
-			<li class="container column center"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/filezilla/filezilla-plain.svg"/>FileZilla</li>
-			<li class="container column center"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/putty/putty-original.svg"/>PuTTY</li>
-			<li class="container column center"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/ifttt/ifttt-original.svg"/>IFTTT</li>
+			<li class="container column center"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg" alt="C++ icon"/>C++</li>
+			<li class="container column center"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML5 icon"/>HTML5</li>
+			<li class="container column center"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS3 icon"/>CSS3</li>
+			<li class="container column center"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript icon"/>JavaScript</li>
+			<li class="container column center"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg" alt="Bootstrapicon"/>Bootstrap</li>
+			<li class="container column center"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jquery/jquery-original.svg" alt="jQuery icon"/>jQuery</li>
+			<li class="container column center"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" alt="Git icon"/>Git</li>
+			<li class="container column center"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cmake/cmake-original.svg" alt="CMake icon"/>CMake</li>
+			<li class="container column center"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/googlecloud/googlecloud-original.svg" alt="Google Cloud icon"/>Google Cloud</li>
+			<li class="container column center"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/filezilla/filezilla-plain.svg" alt="FileZilla icon"/>FileZilla</li>
+			<li class="container column center"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/putty/putty-original.svg" alt="PuTTY icon"/>PuTTY</li>
+			<li class="container column center"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/ifttt/ifttt-original.svg" alt="IFTTT icon"/>IFTTT</li>
 		</ui>
 	</div>
 </section>
@@ -139,31 +147,31 @@
 	<div class="container column">
 		<ui class="container bulletless center">
 			<li class="relative">
-				<img src="https://mathworld.wolfram.com/images/eps-svg/SquareGrid_800.svg"/>
+				<img src="http://clipart-library.com/img/1611615.jpg" alt="Image of blue project"/>
 				<div class="description absolute">
 					C++
 				</div>
 			</li>
 			<li class="relative">
-				<img src="https://mathworld.wolfram.com/images/eps-svg/SquareGrid_800.svg"/>
+				<img src="http://clipart-library.com/img/1611615.jpg" alt="Image of blue project"/>
 				<div class="description absolute">
 					A
 				</div>
 			</li>
 			<li class="relative">
-				<img src="https://mathworld.wolfram.com/images/eps-svg/SquareGrid_800.svg"/>
+				<img src="http://clipart-library.com/img/1611615.jpg" alt="Image of blue project"/>
 				<div class="description absolute">
 					C++
 				</div>
 			</li>
 			<li class="relative">
-				<img src="https://mathworld.wolfram.com/images/eps-svg/SquareGrid_800.svg"/>
+				<img src="http://clipart-library.com/img/1611615.jpg" alt="Image of blue project"/>
 				<div class="description absolute">
 					C++
 				</div>
 			</li>
 			<li class="relative">
-				<img src="https://mathworld.wolfram.com/images/eps-svg/SquareGrid_800.svg"/>
+				<img src="http://clipart-library.com/img/1611615.jpg" alt="Image of blue project"/>
 				<div class="description absolute">
 					C++
 				</div>

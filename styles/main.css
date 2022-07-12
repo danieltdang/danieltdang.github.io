@@ -13,11 +13,6 @@ body {
 section {
 	padding: 50px 0 50px 0;
 }
-p {
-	font-size: 14px;
-	margin-bottom: 20px;
-	line-height: 1.5em;
-}
 h1 {
 	text-align: center;
 	margin: 20px;
@@ -85,8 +80,12 @@ nav {
 	background-color: rgba(255, 255, 255, 1); 
 	box-shadow: 0 0.275rem 0.75rem -0.0625rem rgb(11 15 25 / 6%), 0 0.125rem 0.4rem -0.0625rem rgb(11 15 25 / 3%);
 }
+nav #wrap {
+	width: 70%;
+}
 nav.transparent {
 	box-shadow: none;
+	filter: drop-shadow(0px 2px 2px rgba(0, 0, 0, 1));
 }
 nav.transparent #menu li a.button {
 	color: #fff;
@@ -158,9 +157,15 @@ nav #menu .icon {
 	display: none;
 }
 
-@media screen and (max-width: 626px) {
+@media screen and (max-width: 910px) {
 	nav {
 		display: block !important;
+	}
+	nav #wrap {
+		width: 100%;
+	}
+	nav #menu {
+		width: 100%;
 	}
 	nav #menu .icon {
 		color: #0B0F19;
@@ -233,7 +238,7 @@ nav #menu .icon {
 	filter: drop-shadow(0px 2px 2px rgba(0, 0, 0, 1));
 }
 #splash #socials {
-	padding-top: 20px;
+	padding-top: 50px;
 	width: 250px;
 }
 #splash #socials svg {
@@ -261,6 +266,18 @@ nav #menu .icon {
 #about {
 	background-color: #fff;
 }
+#about #info img {
+	width: 250px;
+	border: 10px solid #FAFAFA;
+	border-radius: 50%;
+}
+#about #info p {
+	padding: 0 40px;
+	width: 300px;
+}
+#about #documents svg {
+	font-size: 36px;
+}
 
 /* --------------------------- EDUCATION SECTION STYLES --------------------------- */
 #education {
@@ -272,6 +289,7 @@ nav #menu .icon {
 	margin: auto 0;
 	padding: 0 30px 0 0;
 	width: 100px;
+	height: 100px;
 }
 #education #university h2, h3, h4 {
 	margin: 0;
@@ -334,6 +352,7 @@ nav #menu .icon {
 #skills img {
 	margin: 10px;
 	width: 100px;
+	filter: drop-shadow(0px 1px 1px rgba(0, 0, 0, 1));
 }
 
 @media screen and (max-width: 600px) {
@@ -368,6 +387,7 @@ nav #menu .icon {
 	transition: 0.3s;
 	border-radius: 10px;
 	width: 300px;
+	filter: drop-shadow(0px 2px 2px rgba(0, 0, 0, 1));
 }
 #projects .description {
 	transition: opacity 0.3s, visibility 0.3s;
@@ -376,6 +396,7 @@ nav #menu .icon {
   	transform: translate(-50%, -50%);
 	visibility: hidden;
 	opacity: 0;
+	color: #fff;
 }
 
 @media screen and (max-width: 600px) {
@@ -400,7 +421,7 @@ footer p {
 footer #socials a {
 	border: 2px solid rgba(255, 255, 255, 0.08);
 	border-radius: 4px;
-	transition: background-color 0.5s ease;
+	transition: color 0.5s ease;
 }
 footer #socials svg {
 	margin: 0 10px 0 10px;
