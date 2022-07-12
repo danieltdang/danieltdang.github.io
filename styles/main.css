@@ -264,10 +264,12 @@ nav #menu .icon {
 
 /* --------------------------- ABOUT SECTION STYLES --------------------------- */
 #about {
+	width: 100%;
 	background-color: #fff;
 }
 #about #info img {
-	width: 250px;
+	width: 80%;
+	max-width: 250px;
 	border: 10px solid #FAFAFA;
 	border-radius: 50%;
 	box-shadow: 0 0.275rem 0.75rem -0.0625rem rgb(11 15 25 / 6%), 0 0.125rem 0.4rem -0.0625rem rgb(11 15 25 / 3%);
@@ -355,6 +357,7 @@ nav #menu .icon {
 	padding: 0 0 0 0;
 }
 #education #coursework ul {
+	font-size: 20px;
 	padding-left: 50px;
 }
 
@@ -377,6 +380,7 @@ nav #menu .icon {
 	#education #coursework ul {
 		padding: 0 20px 0 40px;
 		width: 90%;
+		font-size: 18px;
 	}
 }
 
@@ -434,7 +438,8 @@ nav #menu .icon {
 #projects img {
 	transition: 0.3s;
 	border-radius: 10px;
-	width: 300px;
+	max-width: 300px;
+	width: 90%;
 	filter: drop-shadow(0px 2px 2px rgba(0, 0, 0, 1));
 }
 #projects .description {
@@ -450,9 +455,6 @@ nav #menu .icon {
 @media screen and (max-width: 600px) {
 	#projects li {
 		margin: 0 0 40px 0;
-	}
-	#projects img {
-		width: 300px;
 	}
 }
 
