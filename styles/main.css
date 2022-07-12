@@ -275,8 +275,34 @@ nav #menu .icon {
 	padding: 0 40px;
 	width: 300px;
 }
+#about #documents {
+	width: 425px;
+	padding: 40px 0 20px 0;
+	font-size: 24px;
+}
 #about #documents svg {
-	font-size: 36px;
+	margin-right: 5px;
+}
+#about #documents a {
+	font-size: 24px;
+	font-weight: 500;
+	padding: 10px 15px;
+	text-decoration: none;
+	color: #1d1d1f;
+	background-color: #fff;
+	border: 1px solid #0476D9;
+	border-radius: 4px;
+	transition: background-color 0.5s ease, color 0.5s ease;
+}
+#about #documents a:link {
+	color: #1d1d1f;
+}
+#about #documents a:visited {
+	color: #1d1d1f;
+}
+#about #documents a:hover {
+	background-color: #0476D9;
+	color: #fff;
 }
 
 /* --------------------------- EDUCATION SECTION STYLES --------------------------- */
