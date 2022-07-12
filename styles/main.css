@@ -275,6 +275,7 @@ nav #menu .icon {
 	box-shadow: 0 0.275rem 0.75rem -0.0625rem rgb(11 15 25 / 6%), 0 0.125rem 0.4rem -0.0625rem rgb(11 15 25 / 3%);
 }
 #about #info p {
+	text-align: left;
 	font-size: 18px;
 	padding: 0 40px;
 	max-width: 350px;
