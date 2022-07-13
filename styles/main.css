@@ -157,12 +157,19 @@ nav #menu .icon {
 	display: none;
 }
 
-@media screen and (max-width: 910px) {
-	nav {
-		display: block !important;
-	}
+@media screen and (max-width: 1000px) {
 	nav #wrap {
 		width: 100%;
+	}
+	nav #dropdown li a.button {
+		font-size: 16px;
+		padding: 18px;
+	}
+}
+
+@media screen and (max-width: 600px) {
+	nav {
+		display: block !important;
 	}
 	nav #menu {
 		width: 100%;
