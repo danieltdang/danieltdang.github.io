@@ -233,7 +233,7 @@ nav #menu .icon {
 	font-size: 80px; 	
 	filter: drop-shadow(0px 2px 2px rgba(0, 0, 0, 1));
 }
-#splash #message span {
+#splash #message {
 	font-size: 20px;
 	filter: drop-shadow(0px 2px 2px rgba(0, 0, 0, 1));
 }
@@ -241,7 +241,7 @@ nav #menu .icon {
 	padding-top: 50px;
 	width: 250px;
 }
-#splash #socials svg {
+#splash #socials .iconify {
 	padding: 12px;
 	font-size: 24px;
 }
@@ -267,6 +267,9 @@ nav #menu .icon {
 	width: 100%;
 	background-color: #fff;
 }
+#about #info {
+	margin-top: 50px;
+}
 #about #info img {
 	width: 80%;
 	max-width: 250px;
@@ -274,11 +277,11 @@ nav #menu .icon {
 	border-radius: 50%;
 	box-shadow: 0 0.275rem 0.75rem -0.0625rem rgb(11 15 25 / 6%), 0 0.125rem 0.4rem -0.0625rem rgb(11 15 25 / 3%);
 }
-#about #info p {
+#about #info #background {
 	text-align: left;
 	font-size: 18px;
 	padding: 0 40px;
-	max-width: 350px;
+	max-width: 450px;
 	width: 70%;
 	margin: auto 0;
 }
@@ -289,7 +292,7 @@ nav #menu .icon {
 	margin-bottom: 20px;
 	font-size: 24px;
 }
-#about #documents svg {
+#about #documents .iconify {
 	margin-right: 5px;
 }
 #about #documents a {
@@ -333,6 +336,9 @@ nav #menu .icon {
 	background-color: #FAFAFA;
 	color: #212529;
 }
+#education #university {
+	margin-top: 50px;
+}
 #education #university img {
 	float: left;
 	margin: auto 0;
@@ -360,6 +366,7 @@ nav #menu .icon {
 #education #coursework ul {
 	font-size: 20px;
 	padding-left: 50px;
+	font-size: 18px;
 }
 
 @media screen and (max-width: 600px) {
@@ -381,7 +388,6 @@ nav #menu .icon {
 	#education #coursework ul {
 		padding: 0 20px 0 40px;
 		width: 90%;
-		font-size: 18px;
 	}
 }
 
@@ -392,7 +398,7 @@ nav #menu .icon {
 #skills div {
 	width: 100%;
 	max-width: 800px;
-	margin-bottom: 20px;
+	margin: 50px 0 20px 0;
 }
 #skills li {
 	transition: 0.3s;
@@ -402,7 +408,7 @@ nav #menu .icon {
 #skills li:hover {
 	transform: scale(1.2);
 }
-#skills img {
+#skills .devicon {
 	margin: 10px;
 	width: 100px;
 	filter: drop-shadow(0px 1px 1px rgba(0, 0, 0, 1));
@@ -413,7 +419,7 @@ nav #menu .icon {
 		width: 30%;
 		margin: 20px;
 	}
-	#skills img {
+	#skills .devicon {
 		margin: 16px;
 	}
 }
@@ -422,12 +428,13 @@ nav #menu .icon {
 #projects {
 	background-color: #FAFAFA;
 }	
-#projects div .container {
+#projects div {
 	width: 100%;
 	max-width: 1250px;
+	margin-bottom: 20px;
 }
 #projects li {
-	margin: 50px;
+	margin: 50px 50px 0 50px;
 }
 #projects li:hover img {
 	filter: blur(1px) brightness(50%);
@@ -439,8 +446,7 @@ nav #menu .icon {
 #projects img {
 	transition: 0.3s;
 	border-radius: 10px;
-	max-width: 300px;
-	width: 90%;
+	width: 300px;
 	filter: drop-shadow(0px 2px 2px rgba(0, 0, 0, 1));
 }
 #projects .description {
@@ -454,8 +460,17 @@ nav #menu .icon {
 }
 
 @media screen and (max-width: 600px) {
+	#projects div {
+		width: 90%;
+	}
 	#projects li {
-		margin: 0 0 40px 0;
+		margin: 50px 20px 40px 20px;
+	}
+	#projects li:last-child {
+		margin-bottom: 20px;
+	}
+	#projects img {
+		width: 225px;
 	}
 }
 
@@ -474,7 +489,7 @@ footer #socials a {
 	border-radius: 4px;
 	transition: color 0.5s ease;
 }
-footer #socials svg {
+footer #socials .iconify {
 	margin: 0 10px 0 10px;
 }
 footer #socials a:link {
