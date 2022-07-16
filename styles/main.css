@@ -435,34 +435,12 @@ nav #menu .icon {
 #projects {
 	background-color: #FAFAFA;
 }	
-#projects div {
+#projects .wrap {
 	width: 100%;
 	max-width: 1250px;
-
 }
 #projects li {
 	margin: 50px 50px 0 50px;
-}
-#projects li:hover img {
-	filter: blur(1px) brightness(50%);
-}
-#projects li:hover .description {
-	visibility: visible;
-	opacity: 1;
-}
-#projects img {
-	transition: 0.3s;
-	width: 300px;
-	filter: drop-shadow(0px 2px 2px rgba(0, 0, 0, 1));
-}
-#projects .description {
-	transition: opacity 0.3s, visibility 0.3s;
-	top: 50%;
-  	left: 50%;
-  	transform: translate(-50%, -50%);
-	visibility: hidden;
-	opacity: 0;
-	color: #fff;
 }
   
 .cards {
@@ -475,13 +453,15 @@ nav #menu .icon {
 	height: 100%;  
 	border-radius: 30px;
 	overflow: hidden;
-	text-decoration: none;
 }
 .card__image {
-	width: 100%;
+	width: 300px;
 	height: auto;
+	transition: 0.3s;
+	border-radius: 30px;
 }
 .card__overlay {
+	width: 100%;
 	margin: 0;
 	position: absolute;
 	bottom: 0;
@@ -496,41 +476,33 @@ nav #menu .icon {
 }
 .card__header {
 	position: relative;
-	display: flex;
 	overflow: hidden;
 	padding: 16px 0;  
 	background-color: #fff;
 	transform: translateY(-100%);
 	transition: 0.3s ease-in-out;
 }
-.card:hover .card__header {
-	transform: translateY(0);
-}
-
 .card__title {
 	font-size: 16px;
 	text-align: center;
 	color: #0B0F19;
 }
-
 .card__status {
-	font-size: .8em;
-	color: #D7BDCA;
+	font-size: 14px;
+	color: #A5ABBD;
 }
-
 .card__description {
-	padding: 0 0 16px;
-	margin: 0;
-	color: #D7BDCA;  
-	display: -webkit-box;
-	-webkit-box-orient: vertical;
-	-webkit-line-clamp: 3;
+	font-size: 14px;
+	text-align: left;
+	padding: 16px;
+	margin: 0 0;
+	color: #A5ABBD;  
 	overflow: hidden;
 }
 
 @media screen and (max-width: 600px) {
-	#projects div {
-		width: 90%;
+	#projects .wrap {
+		width: 95%;
 	}
 	#projects li {
 		margin: 50px 20px 40px 20px;
