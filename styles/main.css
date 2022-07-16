@@ -435,6 +435,7 @@ nav #menu .icon {
 #projects .wrap {
 	width: 100%;
 	max-width: 1250px;
+	padding-bottom: 20px;
 }
 #projects li {
 	margin: 50px 50px 0 50px;
@@ -513,7 +514,7 @@ nav #menu .icon {
 	#projects img {
 		width: 275px;
 	}
-	#projects .card__overlay, .card__header {
+	#projects .card__overlay, #projects .card__header {
 		transform: translateY(0);
 	}
 }
