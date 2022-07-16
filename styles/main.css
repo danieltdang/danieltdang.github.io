@@ -160,7 +160,7 @@ nav #menu .icon {
 	}
 	nav #dropdown .button {
 		font-size: 16px;
-		padding: 21px;
+		padding: 21px 18px;
 	}
 }
 
@@ -402,7 +402,7 @@ nav #menu .icon {
 #skills div {
 	width: 100%;
 	max-width: 800px;
-	margin: 50px 0 20px 0;
+	margin: 34px 0 20px 0;
 }
 #skills li {
 	transition: 0.3s;
@@ -420,7 +420,7 @@ nav #menu .icon {
 
 @media screen and (max-width: 600px) {
 	#skills li {
-		width: 30%;
+		width: 120px;
 		margin: 20px;
 	}
 	#skills .devicon {
@@ -450,15 +450,16 @@ nav #menu .icon {
 	height: 100%;  
 	border-radius: 30px;
 	overflow: hidden;
+	color: #0B0F19;
 	box-shadow: 0 0.275rem 0.75rem -0.0625rem rgb(11 15 25 / 6%), 0 0.125rem 0.4rem -0.0625rem rgb(11 15 25 / 3%);
 }
-#projects .card__image {
+#projects .card_image {
 	width: 300px;
 	height: auto;
 	transition: 0.3s;
 	border-radius: 30px;
 }
-#projects .card__overlay {
+#projects .card_overlay {
 	width: 100%;
 	margin: 0;
 	position: absolute;
@@ -467,12 +468,12 @@ nav #menu .icon {
 	right: 0;
 	background-color: #fff;      
 	transform: translateY(100%);
-	transition: 0.3s ease-in-out;
+	transition: 0.2s ease-in-out;
 }
-#projects .card:hover .card__overlay {
+#projects .card:hover .card_overlay {
 	transform: translateY(0);
 }
-#projects .card__header {
+#projects .card_header {
 	position: relative;
 	overflow: hidden;
 	padding: 16px 0;
@@ -480,24 +481,25 @@ nav #menu .icon {
 	transform: translateY(-100%);
 	transition: 0.2s ease-in-out;
 }
-#projects .card:hover .card__header {
+#projects .card:hover .card_header {
 	transform: translateY(0);
 }
-#projects .card__title {
+#projects .card_title {
 	font-size: 16px;
+	font-weight: 700;
 	text-align: center;
-	color: #0B0F19;
 }
-#projects .card__status {
+#projects .card_status {
 	font-size: 14px;
+	font-weight: 300;
 	color: #A5ABBD;
 }
-#projects .card__description {
+#projects .card_description {
 	font-size: 14px;
+	font-weight: 400;
 	text-align: left;
 	padding: 0 16px 16px 16px;
 	margin: 0 0;
-	color: #A5ABBD;  
 	overflow: hidden;
 }
 
@@ -514,7 +516,7 @@ nav #menu .icon {
 	#projects img {
 		width: 275px;
 	}
-	#projects .card__overlay, #projects .card__header {
+	#projects .card_overlay, #projects .card_header {
 		transform: translateY(0);
 	}
 }
