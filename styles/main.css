@@ -87,30 +87,27 @@ nav.transparent {
 	box-shadow: none;
 	filter: drop-shadow(0px 2px 2px rgba(0, 0, 0, 1));
 }
-nav.transparent #menu li a.button {
+nav.transparent #menu .button {
 	color: #fff;
 }
 nav.transparent #menu .icon {
 	color: #fff;
 }
-nav.transparent #dropdown li a.button {
+nav.transparent #dropdown .button {
 	color: #fff;
 }
-nav.transparent #dropdown li a.button:hover {
+nav.transparent #dropdown .button:hover {
 	color: #fff;
 }
 nav ul {
 	margin: 0;
 	padding: 0;
 }
-nav ul li, nav ul li a {
-    display: block;
-}
 nav a.button {
 	text-decoration: none;
 	text-align: center;
 }
-nav #menu li a.button {
+nav #menu .button {
 	color: #4578DF;
 	font-weight: 600;
 	font-size: 22px;
@@ -125,31 +122,31 @@ nav #dropdown li {
 	display: flex;
 	flex-direction: row;
 }
-nav #dropdown li a.button {
+nav #dropdown .button {
 	color: #0B0F19;
 	font-weight: 500;
 	font-size: 18px;
 	padding: 20px;
 	float: right;
 }
-nav #dropdown a.button:hover {
+nav #dropdown .button:hover {
 	color: #0B0F19;
 }
-nav #dropdown a.button::after {
+nav #dropdown .button::after {
 	display: block;
     content: '';
     border-bottom: solid 2px #e5e5e8;
 	border-radius: 2px;
 	opacity: 0;
 }
-nav #dropdown a.button:hover:after {
+nav #dropdown .button:hover:after {
 	opacity: 1;
     transition: 0.5s opacity;
 }
-nav #dropdown a.button.active {
+nav #dropdown .button.active {
 	color: #4578DF;
 }
-nav #dropdown a.button.active:hover:after {
+nav #dropdown .button.active:hover:after {
 	border-color: #4578DF;
 }
 nav #menu .icon {
@@ -161,9 +158,9 @@ nav #menu .icon {
 	nav #wrap {
 		width: 100%;
 	}
-	nav #dropdown li a.button {
+	nav #dropdown .button {
 		font-size: 16px;
-		padding: 18px;
+		padding: 21px;
 	}
 }
 
@@ -179,7 +176,7 @@ nav #menu .icon {
 		float: right;
 		display: block;
  	}
-	nav #menu a.button {
+	nav #menu .button {
 		padding: 18px;
 	}
 	nav #dropdown {
@@ -189,7 +186,7 @@ nav #menu .icon {
 		overflow: hidden;
 		transition: all 0.4s ease-in-out;
 	}
-	nav #dropdown li a.button {
+	nav #dropdown .button {
 		display: block;
 		float: left;
 		text-align: left;
@@ -203,10 +200,10 @@ nav #menu .icon {
 	nav #dropdown.responsive li {
 		width: 100%;
 	}
-	nav #dropdown.responsive li a.button {
+	nav #dropdown.responsive .button {
 		width: 100%;
 	}
-	nav #dropdown a.button::after {
+	nav #dropdown .button::after {
 		border-style: none;
 	}
 }
@@ -442,25 +439,25 @@ nav #menu .icon {
 #projects li {
 	margin: 50px 50px 0 50px;
 }
-  
-.cards {
+#projects .cards {
 	margin: 0;
 	padding: 0;
 }
-.card {
+#projects .card {
 	position: relative;
 	display: block;
 	height: 100%;  
 	border-radius: 30px;
 	overflow: hidden;
+	box-shadow: 0 0.275rem 0.75rem -0.0625rem rgb(11 15 25 / 6%), 0 0.125rem 0.4rem -0.0625rem rgb(11 15 25 / 3%);
 }
-.card__image {
+#projects .card__image {
 	width: 300px;
 	height: auto;
 	transition: 0.3s;
 	border-radius: 30px;
 }
-.card__overlay {
+#projects .card__overlay {
 	width: 100%;
 	margin: 0;
 	position: absolute;
@@ -471,30 +468,30 @@ nav #menu .icon {
 	transform: translateY(100%);
 	transition: 0.3s ease-in-out;
 }
-.card:hover .card__overlay {
+#projects .card:hover .card__overlay {
 	transform: translateY(0);
 }
-.card__header {
+#projects .card__header {
 	position: relative;
 	overflow: hidden;
-	padding: 16px 0;  
+	padding: 16px 0;
 	background-color: #fff;
 	transform: translateY(-100%);
 	transition: 0.2s ease-in-out;
 }
-.card:hover .card__header {
+#projects .card:hover .card__header {
 	transform: translateY(0);
 }
-.card__title {
+#projects .card__title {
 	font-size: 16px;
 	text-align: center;
 	color: #0B0F19;
 }
-.card__status {
+#projects .card__status {
 	font-size: 14px;
 	color: #A5ABBD;
 }
-.card__description {
+#projects .card__description {
 	font-size: 14px;
 	text-align: left;
 	padding: 0 16px 16px 16px;
@@ -514,9 +511,9 @@ nav #menu .icon {
 		margin-bottom: 20px;
 	}
 	#projects img {
-		width: 250px;
+		width: 275px;
 	}
-	.card__overlay, .card__header {
+	#projects .card__overlay, .card__header {
 		transform: translateY(0);
 	}
 }
