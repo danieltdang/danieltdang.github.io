@@ -339,6 +339,73 @@ nav #menu .icon {
 		margin-top: 20px;
 	}
 }
+
+/* --------------------------- EXPERIENCE SECTION STYLES --------------------------- */
+#experience {
+	width: 100%;
+	background-color: #FAFAFA;
+	color: #212529;
+}
+#experience .cards {
+	max-width: 1500px;
+	width: 80%;
+	display: block;
+	height: 100%;
+	border-radius: 30px;
+	overflow: hidden;
+	color: #0B0F19;
+	box-shadow: 0 0.275rem 0.75rem -0.0625rem rgb(11 15 25 / 26%), 0 0.125rem 0.4rem -0.0625rem rgb(11 15 25 / 3%);
+	margin-top: 50px;
+}
+#experience #company {
+	margin: 20px 20px 0 20px;
+}
+#experience #company img {
+	float: left;
+	margin: auto 0;
+	width: 100px;
+	height: 100px;
+}
+#experience #company h2, h3, h4 {
+	margin: 0;
+	padding: 0;
+}
+#experience #company #role {
+	margin: auto;
+	margin-left: 20px;
+}
+#experience #location {
+	margin: auto;
+	margin-right: 0;
+	text-align: right;
+}
+#experience #description ul {
+	font-size: 18px;
+	margin-right: 10px;
+}
+
+@media screen and (max-width: 600px) {
+	#experience div {
+		width: 85%;
+	}
+	#experience #company img, div, h2, h3, h4, h5 {
+		justify-content: center;
+		text-align: center;
+		padding: 0 0 0 0;
+	}
+	#experience #description h2 {
+		text-align: center;
+	}
+	#experience #description h3 {
+		margin: 0 0 0 20px;
+		text-align: left;
+	}
+	#experience #description ul {
+		padding: 0 20px 0 40px;
+		width: 90%;
+	}
+}
+
 /* --------------------------- EDUCATION SECTION STYLES --------------------------- */
 #education {
 	width: 100%;
@@ -369,7 +436,6 @@ nav #menu .icon {
 	margin-bottom: 20px;
 }
 #education #coursework h2, h3 {
-	text-align: left;
 	padding: 0 0 0 0;
 }
 #education #coursework ul {
@@ -406,7 +472,7 @@ nav #menu .icon {
 }
 #skills div {
 	width: 100%;
-	max-width: 800px;
+	max-width: 1300px;
 	margin: 34px 0 20px 0;
 }
 #skills li {

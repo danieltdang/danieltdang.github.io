@@ -74,7 +74,7 @@ var myTitleMessages = [
   "hey there!",
   "glad to see you here.",
   "my name is daniel.",
-  "i am a junior at FSU.",
+  "i am a FSU graduate.",
   "i am studying computer science.",
   "i am interested in SWE.",
   "i am a big fan of pho.",
