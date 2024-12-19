@@ -85,7 +85,7 @@ nav {
 	box-shadow: 0 0.275rem 0.75rem -0.0625rem rgb(11 15 25 / 6%), 0 0.125rem 0.4rem -0.0625rem rgb(11 15 25 / 3%);
 }
 nav #wrap {
-	width: 70%;
+	width: 85%;
 }
 nav.transparent {
 	box-shadow: none;
@@ -168,7 +168,7 @@ nav #menu .icon {
 	}
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 800px) {
 	nav {
 		display: block !important;
 	}
@@ -378,6 +378,9 @@ nav #menu .icon {
 	margin: auto;
 	margin-right: 0;
 	text-align: right;
+}
+#experience #description {
+	margin-bottom: 20px;
 }
 #experience #description ul {
 	font-size: 18px;
